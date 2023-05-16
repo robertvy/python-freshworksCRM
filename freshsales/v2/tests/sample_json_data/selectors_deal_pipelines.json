@@ -1,0 +1,104 @@
+{
+  "deal_pipelines": [
+    {
+      "partial": true,
+      "id": 31000060739,
+      "name": "Default Pipeline",
+      "position": 1,
+      "is_default": true,
+      "rotting_days": 30,
+      "configs": [
+        { "field_name": "amount", "position": 1, "highlight": true },
+        { "field_name": "sales_account_id", "position": 2, "highlight": false },
+        { "field_name": "expected_close", "position": 3, "highlight": false }
+      ],
+      "aggregated_field": "expected_deal_value",
+      "deal_stages": [
+        {
+          "id": 31000425871,
+          "value": "New",
+          "name": "New",
+          "position": 1,
+          "forecast_type": "Open",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 5,
+          "is_deleted": false,
+          "probability": 100,
+          "updated_at": "2023-03-09T06:44:37Z"
+        },
+        {
+          "id": 31000425872,
+          "value": "Follow-up",
+          "name": "Follow-up",
+          "position": 2,
+          "forecast_type": "Open",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 2,
+          "is_deleted": false,
+          "probability": 100,
+          "updated_at": "2023-03-09T06:44:37Z"
+        },
+        {
+          "id": 31000425873,
+          "value": "Under review",
+          "name": "Under review",
+          "position": 3,
+          "forecast_type": "Open",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 2,
+          "is_deleted": false,
+          "probability": 100,
+          "updated_at": "2023-03-09T06:44:37Z"
+        },
+        {
+          "id": 31000425874,
+          "value": "Demo",
+          "name": "Demo",
+          "position": 4,
+          "forecast_type": "Open",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 2,
+          "is_deleted": false,
+          "probability": 100,
+          "updated_at": "2023-03-09T06:44:37Z"
+        },
+        {
+          "id": 31000425875,
+          "value": "Negotiation",
+          "name": "Negotiation",
+          "position": 5,
+          "forecast_type": "Open",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 2,
+          "is_deleted": false,
+          "probability": 100,
+          "updated_at": "2023-03-09T06:44:37Z"
+        },
+        {
+          "id": 31000425876,
+          "value": "Won",
+          "name": "Won",
+          "position": 7,
+          "forecast_type": "Closed Won",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 4,
+          "is_deleted": false,
+          "probability": 100,
+          "updated_at": "2023-03-09T06:44:37Z"
+        },
+        {
+          "id": 31000425877,
+          "value": "Lost",
+          "name": "Lost",
+          "position": 8,
+          "forecast_type": "Closed Lost",
+          "deal_pipeline_id": 31000060739,
+          "choice_type": 4,
+          "is_deleted": false,
+          "probability": 0,
+          "updated_at": "2023-03-09T06:44:37Z"
+        }
+      ]
+    }
+  ]
+}

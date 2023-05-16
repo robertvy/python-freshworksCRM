@@ -1,0 +1,24 @@
+{
+  "product": {
+    "id": 31000985825,
+    "name": "Updated Product Name",
+    "category": "Software",
+    "custom_field": {},
+    "product_code": "sample_product",
+    "sku_number": "sample_sku",
+    "parent_product": null,
+    "territory_id": null,
+    "valid_till": null,
+    "is_active": true,
+    "owner_id": null,
+    "is_deleted": false,
+    "created_at": "2023-05-16T13:40:28+02:00",
+    "updated_at": "2023-05-16T13:44:54+02:00",
+    "pricing_type": 0,
+    "avatar": null,
+    "base_currency_amount": null,
+    "creater_id": 31000148397,
+    "updater_id": 31000148397,
+    "description": "This is a sample product"
+  }
+}

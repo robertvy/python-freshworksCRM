@@ -1,0 +1,55 @@
+{
+  "filters": [
+    {
+      "id": 31003548199,
+      "name": "My Accounts",
+      "model_class_name": "SalesAccount",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548200,
+      "name": "All Accounts",
+      "model_class_name": "SalesAccount",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548201,
+      "name": "My Territory Accounts",
+      "model_class_name": "SalesAccount",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548202,
+      "name": "Recently Imported",
+      "model_class_name": "SalesAccount",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548203,
+      "name": "Recycle Bin",
+      "model_class_name": "SalesAccount",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    }
+  ],
+  "meta": {}
+}

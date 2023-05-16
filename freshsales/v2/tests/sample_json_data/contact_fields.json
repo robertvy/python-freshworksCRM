@@ -1,0 +1,1501 @@
+{
+  "fields": [
+    {
+      "id": 1,
+      "label": "First name",
+      "name": "first_name",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 3,
+      "visible": true
+    },
+    {
+      "id": 2,
+      "label": "Last name",
+      "name": "last_name",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 4,
+      "visible": true
+    },
+    {
+      "id": 3,
+      "label": "Accounts",
+      "name": "sales_accounts",
+      "type": "group_field",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 5,
+      "visible": true
+    },
+    {
+      "id": 4,
+      "label": "Emails",
+      "name": "emails",
+      "type": "group_field",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [
+        { "id": "32009647295", "value": "Work", "position": 1 },
+        { "id": "32009647296", "value": "Personal", "position": 2 },
+        { "id": "32009647297", "value": "Other", "position": 3 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 6,
+      "visible": true
+    },
+    {
+      "id": 5,
+      "label": "Mobile",
+      "name": "mobile_number",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 8,
+      "visible": true
+    },
+    {
+      "id": 6,
+      "label": "Work",
+      "name": "work_number",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 9,
+      "visible": true
+    },
+    {
+      "id": 7,
+      "label": "External ID",
+      "name": "external_id",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 10,
+      "visible": false
+    },
+    {
+      "id": 8,
+      "label": "Sales owner",
+      "name": "owner_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 11,
+      "visible": true
+    },
+    {
+      "id": 9,
+      "label": "Subscription status",
+      "name": "subscription_status",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 8,
+      "choices": [
+        { "id": "0", "value": "Unsubscribed", "position": 1 },
+        { "id": "1", "value": "Subscribed", "position": 2 },
+        { "id": "2", "value": "Not subscribed", "position": 3 },
+        { "id": "3", "value": "Reported as spam", "position": 4 },
+        { "id": "4", "value": "Bounced", "position": 5 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 12,
+      "visible": true
+    },
+    {
+      "id": 10,
+      "label": "Subscription types",
+      "name": "subscription_types",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        { "id": "2", "value": "Newsletter", "position": 1 },
+        { "id": "3", "value": "Promotional", "position": 2 },
+        { "id": "4", "value": "Product updates", "position": 3 },
+        { "id": "5", "value": "Conferences & Events", "position": 4 },
+        {
+          "id": "1",
+          "value": "Non-marketing emails from our company",
+          "position": 5
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 11,
+      "label": "Unsubscribe reason",
+      "name": "unsubscription_reason",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [
+        {
+          "id": "6",
+          "value": "I no longer want to receive emails from you",
+          "position": 1
+        },
+        {
+          "id": "7",
+          "value": "I receive too many emails from you",
+          "position": 2
+        },
+        { "id": "8", "value": "The emails are inappropriate", "position": 3 },
+        { "id": "9", "value": "The emails are spam", "position": 4 },
+        { "id": "10", "value": "Others", "position": 5 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 12,
+      "label": "Other unsubscribe reasons",
+      "name": "other_unsubscription_reason",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 13,
+      "label": "WhatsApp subscription status",
+      "name": "whatsapp_subscription_status",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 9,
+      "choices": [
+        { "id": "0", "value": "Unsubscribed", "position": 1 },
+        { "id": "1", "value": "Subscribed", "position": 2 },
+        { "id": "2", "value": "Not subscribed", "position": 3 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 16,
+      "visible": true
+    },
+    {
+      "id": 14,
+      "label": "SMS subscription status",
+      "name": "sms_subscription_status",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 10,
+      "choices": [
+        { "id": "0", "value": "Unsubscribed", "position": 1 },
+        { "id": "1", "value": "Subscribed", "position": 2 },
+        { "id": "2", "value": "Not subscribed", "position": 3 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 17,
+      "visible": true
+    },
+    {
+      "id": 15,
+      "label": "Lifecycle stage",
+      "name": "lifecycle_stage_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 11,
+      "choices": [
+        { "id": "32009647298", "value": "Lead", "position": 1 },
+        { "id": "32009647299", "value": "Sales Qualified Lead", "position": 2 },
+        { "id": "32009647300", "value": "Customer", "position": 3 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 18,
+      "visible": true
+    },
+    {
+      "id": 16,
+      "label": "Status",
+      "name": "contact_status_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": 31000543557,
+          "value": "New",
+          "position": 1,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000543558,
+          "value": "Contacted",
+          "position": 2,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000543559,
+          "value": "Interested",
+          "position": 3,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000543560,
+          "value": "Unqualified",
+          "position": 4,
+          "forecast_type": "Closed Lost"
+        },
+        {
+          "id": 31000543561,
+          "value": "Qualified",
+          "position": 5,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000543562,
+          "value": "Negotiation",
+          "position": 6,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000543563,
+          "value": "Lost",
+          "position": 7,
+          "forecast_type": "Closed Lost"
+        },
+        {
+          "id": 31000543564,
+          "value": "Won",
+          "position": 8,
+          "forecast_type": "Closed Won"
+        },
+        {
+          "id": 31000543565,
+          "value": "Churned",
+          "position": 9,
+          "forecast_type": "Closed Lost"
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 17,
+      "label": "Lost reason",
+      "name": "lost_reason_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        { "id": "32009647301", "value": "Junk Lead", "position": 1 },
+        { "id": "32009647302", "value": "Not able to reach", "position": 2 },
+        { "id": "32009647303", "value": "Not interested", "position": 3 },
+        { "id": "32009647304", "value": "Budget", "position": 4 },
+        { "id": "32009647305", "value": "Lost to competitor", "position": 5 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 18,
+      "label": "Original campaign",
+      "name": "first_campaign",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 12,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 19,
+      "label": "Original medium",
+      "name": "first_medium",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 13,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 20,
+      "label": "Original source",
+      "name": "first_source",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 14,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 21,
+      "label": "Created through campaign",
+      "name": "last_campaign",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 15,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 22,
+      "label": "Created from medium",
+      "name": "last_medium",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 16,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 23,
+      "label": "Created from source",
+      "name": "last_source",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 17,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 24,
+      "label": "Most recent campaign",
+      "name": "latest_campaign",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 18,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 25,
+      "label": "Most recent medium",
+      "name": "latest_medium",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 19,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 26,
+      "label": "Most recent source",
+      "name": "latest_source",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 20,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 27,
+      "label": "Work email",
+      "name": "work_email",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 28,
+      "label": "Tags",
+      "name": "tags",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false,
+      "auto_suggest_url": "/search/auto_suggest/tags.json?&tag_type=contact&q=",
+      "creatable": true,
+      "creatable_data_key": "tags",
+      "multiple": true
+    },
+    {
+      "id": 29,
+      "label": "Job title",
+      "name": "job_title",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 30,
+      "label": "Time zone",
+      "name": "time_zone",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [
+        {
+          "id": "American Samoa",
+          "value": "(GMT-11:00) American Samoa",
+          "position": 1
+        },
+        {
+          "id": "International Date Line West",
+          "value": "(GMT-11:00) International Date Line West",
+          "position": 2
+        },
+        {
+          "id": "Midway Island",
+          "value": "(GMT-11:00) Midway Island",
+          "position": 3
+        },
+        { "id": "Hawaii", "value": "(GMT-10:00) Hawaii", "position": 4 },
+        { "id": "Alaska", "value": "(GMT-08:00) Alaska", "position": 5 },
+        {
+          "id": "Pacific Time (US & Canada)",
+          "value": "(GMT-07:00) Pacific Time (US & Canada)",
+          "position": 6
+        },
+        { "id": "Tijuana", "value": "(GMT-07:00) Tijuana", "position": 7 },
+        { "id": "Arizona", "value": "(GMT-07:00) Arizona", "position": 8 },
+        { "id": "Mazatlan", "value": "(GMT-07:00) Mazatlan", "position": 9 },
+        {
+          "id": "Mountain Time (US & Canada)",
+          "value": "(GMT-06:00) Mountain Time (US & Canada)",
+          "position": 10
+        },
+        {
+          "id": "Central America",
+          "value": "(GMT-06:00) Central America",
+          "position": 11
+        },
+        {
+          "id": "Central Time (US & Canada)",
+          "value": "(GMT-05:00) Central Time (US & Canada)",
+          "position": 12
+        },
+        { "id": "Chihuahua", "value": "(GMT-06:00) Chihuahua", "position": 13 },
+        {
+          "id": "Guadalajara",
+          "value": "(GMT-06:00) Guadalajara",
+          "position": 14
+        },
+        {
+          "id": "Mexico City",
+          "value": "(GMT-06:00) Mexico City",
+          "position": 15
+        },
+        { "id": "Monterrey", "value": "(GMT-06:00) Monterrey", "position": 16 },
+        {
+          "id": "Saskatchewan",
+          "value": "(GMT-06:00) Saskatchewan",
+          "position": 17
+        },
+        { "id": "Bogota", "value": "(GMT-05:00) Bogota", "position": 18 },
+        {
+          "id": "Eastern Time (US & Canada)",
+          "value": "(GMT-04:00) Eastern Time (US & Canada)",
+          "position": 19
+        },
+        {
+          "id": "Indiana (East)",
+          "value": "(GMT-04:00) Indiana (East)",
+          "position": 20
+        },
+        { "id": "Lima", "value": "(GMT-05:00) Lima", "position": 21 },
+        { "id": "Quito", "value": "(GMT-05:00) Quito", "position": 22 },
+        {
+          "id": "Atlantic Time (Canada)",
+          "value": "(GMT-03:00) Atlantic Time (Canada)",
+          "position": 23
+        },
+        { "id": "Caracas", "value": "(GMT-04:00) Caracas", "position": 24 },
+        {
+          "id": "Georgetown",
+          "value": "(GMT-04:00) Georgetown",
+          "position": 25
+        },
+        { "id": "La Paz", "value": "(GMT-04:00) La Paz", "position": 26 },
+        { "id": "Santiago", "value": "(GMT-04:00) Santiago", "position": 27 },
+        {
+          "id": "Newfoundland",
+          "value": "(GMT-02:30) Newfoundland",
+          "position": 28
+        },
+        { "id": "Brasilia", "value": "(GMT-03:00) Brasilia", "position": 29 },
+        {
+          "id": "Buenos Aires",
+          "value": "(GMT-03:00) Buenos Aires",
+          "position": 30
+        },
+        { "id": "Greenland", "value": "(GMT-02:00) Greenland", "position": 31 },
+        {
+          "id": "Montevideo",
+          "value": "(GMT-03:00) Montevideo",
+          "position": 32
+        },
+        {
+          "id": "Mid-Atlantic",
+          "value": "(GMT-02:00) Mid-Atlantic",
+          "position": 33
+        },
+        { "id": "Azores", "value": "(GMT+00:00) Azores", "position": 34 },
+        {
+          "id": "Cape Verde Is.",
+          "value": "(GMT-01:00) Cape Verde Is.",
+          "position": 35
+        },
+        {
+          "id": "Casablanca",
+          "value": "(GMT+01:00) Casablanca",
+          "position": 36
+        },
+        { "id": "Dublin", "value": "(GMT+01:00) Dublin", "position": 37 },
+        { "id": "Edinburgh", "value": "(GMT+01:00) Edinburgh", "position": 38 },
+        { "id": "Lisbon", "value": "(GMT+01:00) Lisbon", "position": 39 },
+        { "id": "London", "value": "(GMT+01:00) London", "position": 40 },
+        { "id": "Monrovia", "value": "(GMT+00:00) Monrovia", "position": 41 },
+        { "id": "UTC", "value": "(GMT+00:00) UTC", "position": 42 },
+        { "id": "Amsterdam", "value": "(GMT+02:00) Amsterdam", "position": 43 },
+        { "id": "Belgrade", "value": "(GMT+02:00) Belgrade", "position": 44 },
+        { "id": "Berlin", "value": "(GMT+02:00) Berlin", "position": 45 },
+        { "id": "Bern", "value": "(GMT+02:00) Bern", "position": 46 },
+        {
+          "id": "Bratislava",
+          "value": "(GMT+02:00) Bratislava",
+          "position": 47
+        },
+        { "id": "Brussels", "value": "(GMT+02:00) Brussels", "position": 48 },
+        { "id": "Budapest", "value": "(GMT+02:00) Budapest", "position": 49 },
+        {
+          "id": "Copenhagen",
+          "value": "(GMT+02:00) Copenhagen",
+          "position": 50
+        },
+        { "id": "Ljubljana", "value": "(GMT+02:00) Ljubljana", "position": 51 },
+        { "id": "Madrid", "value": "(GMT+02:00) Madrid", "position": 52 },
+        { "id": "Paris", "value": "(GMT+02:00) Paris", "position": 53 },
+        { "id": "Prague", "value": "(GMT+02:00) Prague", "position": 54 },
+        { "id": "Rome", "value": "(GMT+02:00) Rome", "position": 55 },
+        { "id": "Sarajevo", "value": "(GMT+02:00) Sarajevo", "position": 56 },
+        { "id": "Skopje", "value": "(GMT+02:00) Skopje", "position": 57 },
+        { "id": "Stockholm", "value": "(GMT+02:00) Stockholm", "position": 58 },
+        { "id": "Vienna", "value": "(GMT+02:00) Vienna", "position": 59 },
+        { "id": "Warsaw", "value": "(GMT+02:00) Warsaw", "position": 60 },
+        {
+          "id": "West Central Africa",
+          "value": "(GMT+01:00) West Central Africa",
+          "position": 61
+        },
+        { "id": "Zagreb", "value": "(GMT+02:00) Zagreb", "position": 62 },
+        { "id": "Athens", "value": "(GMT+03:00) Athens", "position": 63 },
+        { "id": "Bucharest", "value": "(GMT+03:00) Bucharest", "position": 64 },
+        { "id": "Cairo", "value": "(GMT+03:00) Cairo", "position": 65 },
+        { "id": "Harare", "value": "(GMT+02:00) Harare", "position": 66 },
+        { "id": "Helsinki", "value": "(GMT+03:00) Helsinki", "position": 67 },
+        { "id": "Jerusalem", "value": "(GMT+03:00) Jerusalem", "position": 68 },
+        {
+          "id": "Kaliningrad",
+          "value": "(GMT+02:00) Kaliningrad",
+          "position": 69
+        },
+        { "id": "Kyiv", "value": "(GMT+03:00) Kyiv", "position": 70 },
+        { "id": "Pretoria", "value": "(GMT+02:00) Pretoria", "position": 71 },
+        { "id": "Riga", "value": "(GMT+03:00) Riga", "position": 72 },
+        { "id": "Sofia", "value": "(GMT+03:00) Sofia", "position": 73 },
+        { "id": "Tallinn", "value": "(GMT+03:00) Tallinn", "position": 74 },
+        { "id": "Vilnius", "value": "(GMT+03:00) Vilnius", "position": 75 },
+        { "id": "Baghdad", "value": "(GMT+03:00) Baghdad", "position": 76 },
+        { "id": "Istanbul", "value": "(GMT+03:00) Istanbul", "position": 77 },
+        { "id": "Kuwait", "value": "(GMT+03:00) Kuwait", "position": 78 },
+        { "id": "Minsk", "value": "(GMT+03:00) Minsk", "position": 79 },
+        { "id": "Moscow", "value": "(GMT+03:00) Moscow", "position": 80 },
+        { "id": "Nairobi", "value": "(GMT+03:00) Nairobi", "position": 81 },
+        { "id": "Riyadh", "value": "(GMT+03:00) Riyadh", "position": 82 },
+        {
+          "id": "St. Petersburg",
+          "value": "(GMT+03:00) St. Petersburg",
+          "position": 83
+        },
+        { "id": "Volgograd", "value": "(GMT+03:00) Volgograd", "position": 84 },
+        { "id": "Tehran", "value": "(GMT+03:30) Tehran", "position": 85 },
+        { "id": "Abu Dhabi", "value": "(GMT+04:00) Abu Dhabi", "position": 86 },
+        { "id": "Baku", "value": "(GMT+04:00) Baku", "position": 87 },
+        { "id": "Muscat", "value": "(GMT+04:00) Muscat", "position": 88 },
+        { "id": "Samara", "value": "(GMT+04:00) Samara", "position": 89 },
+        { "id": "Tbilisi", "value": "(GMT+04:00) Tbilisi", "position": 90 },
+        { "id": "Yerevan", "value": "(GMT+04:00) Yerevan", "position": 91 },
+        { "id": "Kabul", "value": "(GMT+04:30) Kabul", "position": 92 },
+        {
+          "id": "Ekaterinburg",
+          "value": "(GMT+05:00) Ekaterinburg",
+          "position": 93
+        },
+        { "id": "Islamabad", "value": "(GMT+05:00) Islamabad", "position": 94 },
+        { "id": "Karachi", "value": "(GMT+05:00) Karachi", "position": 95 },
+        { "id": "Tashkent", "value": "(GMT+05:00) Tashkent", "position": 96 },
+        { "id": "Chennai", "value": "(GMT+05:30) Chennai", "position": 97 },
+        { "id": "Kolkata", "value": "(GMT+05:30) Kolkata", "position": 98 },
+        { "id": "Mumbai", "value": "(GMT+05:30) Mumbai", "position": 99 },
+        {
+          "id": "New Delhi",
+          "value": "(GMT+05:30) New Delhi",
+          "position": 100
+        },
+        {
+          "id": "Sri Jayawardenepura",
+          "value": "(GMT+05:30) Sri Jayawardenepura",
+          "position": 101
+        },
+        {
+          "id": "Kathmandu",
+          "value": "(GMT+05:45) Kathmandu",
+          "position": 102
+        },
+        { "id": "Almaty", "value": "(GMT+06:00) Almaty", "position": 103 },
+        { "id": "Astana", "value": "(GMT+06:00) Astana", "position": 104 },
+        { "id": "Dhaka", "value": "(GMT+06:00) Dhaka", "position": 105 },
+        { "id": "Urumqi", "value": "(GMT+06:00) Urumqi", "position": 106 },
+        { "id": "Rangoon", "value": "(GMT+06:30) Rangoon", "position": 107 },
+        { "id": "Bangkok", "value": "(GMT+07:00) Bangkok", "position": 108 },
+        { "id": "Hanoi", "value": "(GMT+07:00) Hanoi", "position": 109 },
+        { "id": "Jakarta", "value": "(GMT+07:00) Jakarta", "position": 110 },
+        {
+          "id": "Krasnoyarsk",
+          "value": "(GMT+07:00) Krasnoyarsk",
+          "position": 111
+        },
+        {
+          "id": "Novosibirsk",
+          "value": "(GMT+07:00) Novosibirsk",
+          "position": 112
+        },
+        { "id": "Beijing", "value": "(GMT+08:00) Beijing", "position": 113 },
+        {
+          "id": "Chongqing",
+          "value": "(GMT+08:00) Chongqing",
+          "position": 114
+        },
+        {
+          "id": "Hong Kong",
+          "value": "(GMT+08:00) Hong Kong",
+          "position": 115
+        },
+        { "id": "Irkutsk", "value": "(GMT+08:00) Irkutsk", "position": 116 },
+        {
+          "id": "Kuala Lumpur",
+          "value": "(GMT+08:00) Kuala Lumpur",
+          "position": 117
+        },
+        { "id": "Perth", "value": "(GMT+08:00) Perth", "position": 118 },
+        {
+          "id": "Singapore",
+          "value": "(GMT+08:00) Singapore",
+          "position": 119
+        },
+        { "id": "Taipei", "value": "(GMT+08:00) Taipei", "position": 120 },
+        {
+          "id": "Ulaanbaatar",
+          "value": "(GMT+08:00) Ulaanbaatar",
+          "position": 121
+        },
+        { "id": "Osaka", "value": "(GMT+09:00) Osaka", "position": 122 },
+        { "id": "Sapporo", "value": "(GMT+09:00) Sapporo", "position": 123 },
+        { "id": "Seoul", "value": "(GMT+09:00) Seoul", "position": 124 },
+        { "id": "Tokyo", "value": "(GMT+09:00) Tokyo", "position": 125 },
+        { "id": "Yakutsk", "value": "(GMT+09:00) Yakutsk", "position": 126 },
+        { "id": "Adelaide", "value": "(GMT+09:30) Adelaide", "position": 127 },
+        { "id": "Darwin", "value": "(GMT+09:30) Darwin", "position": 128 },
+        { "id": "Brisbane", "value": "(GMT+10:00) Brisbane", "position": 129 },
+        { "id": "Canberra", "value": "(GMT+10:00) Canberra", "position": 130 },
+        { "id": "Guam", "value": "(GMT+10:00) Guam", "position": 131 },
+        { "id": "Hobart", "value": "(GMT+10:00) Hobart", "position": 132 },
+        {
+          "id": "Melbourne",
+          "value": "(GMT+10:00) Melbourne",
+          "position": 133
+        },
+        {
+          "id": "Port Moresby",
+          "value": "(GMT+10:00) Port Moresby",
+          "position": 134
+        },
+        { "id": "Sydney", "value": "(GMT+10:00) Sydney", "position": 135 },
+        {
+          "id": "Vladivostok",
+          "value": "(GMT+10:00) Vladivostok",
+          "position": 136
+        },
+        { "id": "Magadan", "value": "(GMT+11:00) Magadan", "position": 137 },
+        {
+          "id": "New Caledonia",
+          "value": "(GMT+11:00) New Caledonia",
+          "position": 138
+        },
+        {
+          "id": "Solomon Is.",
+          "value": "(GMT+11:00) Solomon Is.",
+          "position": 139
+        },
+        {
+          "id": "Srednekolymsk",
+          "value": "(GMT+11:00) Srednekolymsk",
+          "position": 140
+        },
+        { "id": "Auckland", "value": "(GMT+12:00) Auckland", "position": 141 },
+        { "id": "Fiji", "value": "(GMT+12:00) Fiji", "position": 142 },
+        {
+          "id": "Kamchatka",
+          "value": "(GMT+12:00) Kamchatka",
+          "position": 143
+        },
+        {
+          "id": "Marshall Is.",
+          "value": "(GMT+12:00) Marshall Is.",
+          "position": 144
+        },
+        {
+          "id": "Wellington",
+          "value": "(GMT+12:00) Wellington",
+          "position": 145
+        },
+        {
+          "id": "Chatham Is.",
+          "value": "(GMT+12:45) Chatham Is.",
+          "position": 146
+        },
+        {
+          "id": "Nuku'alofa",
+          "value": "(GMT+13:00) Nuku'alofa",
+          "position": 147
+        },
+        { "id": "Samoa", "value": "(GMT+13:00) Samoa", "position": 148 },
+        {
+          "id": "Tokelau Is.",
+          "value": "(GMT+13:00) Tokelau Is.",
+          "position": 149
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 31,
+      "label": "Other phone numbers",
+      "name": "phone_numbers",
+      "type": "group_field",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        { "id": "32009647306", "value": "Personal", "position": 1 },
+        { "id": "32009647307", "value": "Home", "position": 2 },
+        { "id": "32009647308", "value": "Other", "position": 3 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 32,
+      "label": "Address",
+      "name": "address",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 33,
+      "label": "City",
+      "name": "city",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 34,
+      "label": "State",
+      "name": "state",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 35,
+      "label": "Zipcode",
+      "name": "zipcode",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 36,
+      "label": "Country",
+      "name": "country",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 37,
+      "label": "Facebook",
+      "name": "facebook",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 38,
+      "label": "Twitter",
+      "name": "twitter",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 39,
+      "label": "LinkedIn",
+      "name": "linkedin",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 40,
+      "label": "Territory",
+      "name": "territory_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 10,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 41,
+      "label": "Source",
+      "name": "lead_source_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        { "id": 31000836318, "value": "Web", "position": 1, "choice_type": 1 },
+        {
+          "id": 31000836319,
+          "value": "Organic Search",
+          "position": 2,
+          "choice_type": 1
+        },
+        {
+          "id": 31000836320,
+          "value": "Email",
+          "position": 3,
+          "choice_type": 1
+        },
+        {
+          "id": 31000836321,
+          "value": "Phone",
+          "position": 4,
+          "choice_type": 1
+        },
+        { "id": 31000836322, "value": "Chat", "position": 5, "choice_type": 1 },
+        {
+          "id": 31000836323,
+          "value": "Web Form",
+          "position": 6,
+          "choice_type": 1
+        },
+        {
+          "id": 31000836324,
+          "value": "Referral",
+          "position": 7,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836325,
+          "value": "Direct",
+          "position": 8,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836326,
+          "value": "Paid Search",
+          "position": 9,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836327,
+          "value": "Blogs",
+          "position": 10,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836328,
+          "value": "Social Media",
+          "position": 11,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836329,
+          "value": "Display Ads",
+          "position": 12,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836330,
+          "value": "Events",
+          "position": 13,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836331,
+          "value": "Webinar",
+          "position": 14,
+          "choice_type": 2
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 42,
+      "label": "Campaign",
+      "name": "campaign_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 43,
+      "label": "Medium",
+      "name": "medium",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 44,
+      "label": "Keyword",
+      "name": "keyword",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 45,
+      "label": "Lists",
+      "name": "lists",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false,
+      "auto_suggest_url": "/search/auto_suggest/lists.json?&q=",
+      "multiple": true
+    },
+    {
+      "id": 46,
+      "label": "Last seen on chat",
+      "name": "last_seen_chat",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 47,
+      "label": "Total chat sessions",
+      "name": "total_sessions",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 48,
+      "label": "Locale",
+      "name": "locale",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 49,
+      "label": "First seen on chat",
+      "name": "first_seen_chat",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 50,
+      "label": "Last contacted time",
+      "name": "last_contacted",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 51,
+      "label": "Last contacted mode",
+      "name": "last_contacted_mode",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        { "id": "Email Incoming", "value": "Email Incoming", "position": 1 },
+        { "id": "Email Outgoing", "value": "Email Outgoing", "position": 2 },
+        { "id": "Call Incoming", "value": "Call Incoming", "position": 3 },
+        { "id": "Call Outgoing", "value": "Call Outgoing", "position": 4 },
+        { "id": "Email Opened", "value": "Email Opened", "position": 5 },
+        {
+          "id": "Chat Conversation",
+          "value": "Chat Conversation",
+          "position": 6
+        },
+        { "id": "Sales Activity", "value": "Sales Activity", "position": 7 },
+        { "id": "SMS", "value": "SMS", "position": 8 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 52,
+      "label": "Last activity type",
+      "name": "last_contacted_sales_activity_mode",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [
+        { "id": "Chat", "value": "Chat", "position": 1 },
+        { "id": "Phone", "value": "Phone", "position": 2 },
+        { "id": "Meeting", "value": "Meeting", "position": 3 },
+        { "id": "Task", "value": "Task", "position": 4 },
+        { "id": "Email", "value": "Email", "position": 5 },
+        { "id": "SMS Outgoing", "value": "SMS Outgoing", "position": 6 },
+        { "id": "Reminder", "value": "Reminder", "position": 7 },
+        { "id": "SMS Incoming", "value": "SMS Incoming", "position": 8 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 53,
+      "label": "Last activity date",
+      "name": "last_contacted_via_sales_activity",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 8,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 54,
+      "label": "Active sales sequences",
+      "name": "active_sales_sequences",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 9,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 55,
+      "label": "Completed sales sequences",
+      "name": "completed_sales_sequences",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 10,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 56,
+      "label": "Last seen on web",
+      "name": "last_seen",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 11,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 57,
+      "label": "Score",
+      "name": "lead_score",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 12,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 58,
+      "label": "Customer fit",
+      "name": "customer_fit",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 13,
+      "choices": [
+        { "id": "5", "value": "5", "position": 1 },
+        { "id": "4", "value": "4", "position": 2 },
+        { "id": "3", "value": "3", "position": 3 },
+        { "id": "2", "value": "2", "position": 4 },
+        { "id": "1", "value": "1", "position": 5 },
+        { "id": "0", "value": "0", "position": 6 }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 59,
+      "label": "Recent note",
+      "name": "recent_note",
+      "type": "textarea",
+      "default": true,
+      "actionable": true,
+      "position": 14,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 60,
+      "label": "Created by",
+      "name": "creater_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 15,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 61,
+      "label": "Created at",
+      "name": "created_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 16,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 62,
+      "label": "Updated by",
+      "name": "updater_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 17,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 63,
+      "label": "Updated at",
+      "name": "updated_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 18,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 64,
+      "label": "Web forms",
+      "name": "web_form_ids",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 19,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 65,
+      "label": "Last assigned at",
+      "name": "last_assigned_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 20,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    }
+  ]
+}

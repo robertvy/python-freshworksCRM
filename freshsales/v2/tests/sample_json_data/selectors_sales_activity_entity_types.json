@@ -1,0 +1,28 @@
+{
+  "sales_activity_entity_types": [
+    {
+      "partial": true,
+      "id": 31000179229,
+      "name": "Follow up",
+      "sales_activity_type_id": 31000477936,
+      "position": 1,
+      "sales_activity_type_name": "Task"
+    },
+    {
+      "partial": true,
+      "id": 31000179230,
+      "name": "Call reminder",
+      "sales_activity_type_id": 31000477936,
+      "position": 2,
+      "sales_activity_type_name": "Task"
+    },
+    {
+      "partial": true,
+      "id": 31000179231,
+      "name": "Email reminder",
+      "sales_activity_type_id": 31000477939,
+      "position": 3,
+      "sales_activity_type_name": "Reminder"
+    }
+  ]
+}

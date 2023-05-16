@@ -1,0 +1,39 @@
+{
+  "sales_activity_outcomes": [
+    {
+      "partial": true,
+      "id": 31002091471,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477937,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091472,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477937,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091473,
+      "name": "No response",
+      "sales_activity_type_id": 31000477937,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091474,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477937,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091475,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477937,
+      "position": 5
+    }
+  ]
+}

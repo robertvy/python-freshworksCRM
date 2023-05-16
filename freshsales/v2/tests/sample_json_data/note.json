@@ -1,0 +1,22 @@
+{
+  "note": {
+    "id": 31004348670,
+    "description": "Sample note for contact create",
+    "created_at": "2023-05-14T14:59:40+02:00",
+    "updated_at": "2023-05-14T14:59:40+02:00",
+    "url": null,
+    "duration": null,
+    "creater_id": 31000148397,
+    "has_access": true,
+    "collab_context": {
+      "hasSlackViewAccess": false,
+      "messageId": ""
+    },
+    "targetables": [
+      {
+        "id": 31016358306,
+        "type": "Contact"
+      }
+    ]
+  }
+}

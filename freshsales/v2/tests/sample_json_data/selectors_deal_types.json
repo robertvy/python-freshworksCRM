@@ -1,0 +1,22 @@
+{
+  "deal_types": [
+    {
+      "id": 31000179100,
+      "name": "New Business",
+      "position": 1,
+      "partial": true
+    },
+    {
+      "id": 31000179101,
+      "name": "Existing Business-Renewal",
+      "position": 2,
+      "partial": true
+    },
+    {
+      "id": 31000179102,
+      "name": "Existing Business-Upgrade",
+      "position": 3,
+      "partial": true
+    }
+  ]
+}

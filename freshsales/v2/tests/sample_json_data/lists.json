@@ -1,0 +1,24 @@
+{
+  "lists": [
+    {
+      "id": 31000036946,
+      "name": "Sample list"
+    },
+    {
+      "id": 31000044990,
+      "name": "My List"
+    },
+    {
+      "id": 31000045351,
+      "name": "Test3"
+    },
+    {
+      "id": 31000045356,
+      "name": "Brand Lovers"
+    }
+  ],
+  "meta": {
+    "total_pages": 1,
+    "total": 4
+  }
+}

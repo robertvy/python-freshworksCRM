@@ -1,0 +1,53 @@
+{
+  "contacts": [
+    {
+      "id": 31016358306,
+      "avatar": "https://img.fullcontact.com/static/4df0efb1ea1a7650fef74f5e44d50d35_ca437b79617f8bbfc40c317b729d32693be1463f356b5be1015b39739859659f",
+      "display_name": "Jane Sampleton",
+      "first_name": "Jane",
+      "last_name": "Sampleton",
+      "email": "janesampleton@gmail.com",
+      "work_number": "3684932360",
+      "mobile_number": "19266529503"
+    }
+  ],
+  "users": [
+    {
+      "id": 31000148397,
+      "display_name": "Robert Doe",
+      "avatar": null,
+      "type": "FdMultitenant::User",
+      "is_active": true,
+      "work_number": "+4367612345678",
+      "mobile_number": null,
+      "email": "rvy@go.com",
+      "uuid": "576330539864639149"
+    }
+  ],
+  "task": {
+    "id": 31001308220,
+    "status": 0,
+    "title": "Sample Task",
+    "description": "This is just a sample task.",
+    "created_at": "2023-05-14T22:29:55+02:00",
+    "updated_at": "2023-05-14T22:29:55+02:00",
+    "owner_id": 31000148397,
+    "due_date": "2099-06-21T13:00:00+02:00",
+    "completed_date": null,
+    "creater_id": 31000148397,
+    "updater_id": 31000148397,
+    "outcome_id": null,
+    "task_type_id": null,
+    "targetables": [
+      {
+        "id": 31016358306,
+        "type": "Contact"
+      }
+    ],
+    "user_ids": [31000148397],
+    "targetable": {
+      "type": "contact",
+      "id": 31016358306
+    }
+  }
+}

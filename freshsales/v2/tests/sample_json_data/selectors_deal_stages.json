@@ -1,0 +1,81 @@
+{
+  "deal_stages": [
+    {
+      "partial": true,
+      "id": 31000425871,
+      "name": "New",
+      "position": 1,
+      "forecast_type": "Open",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 5,
+      "probability": 100
+    },
+    {
+      "partial": true,
+      "id": 31000425872,
+      "name": "Follow-up",
+      "position": 2,
+      "forecast_type": "Open",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 2,
+      "probability": 100
+    },
+    {
+      "partial": true,
+      "id": 31000425873,
+      "name": "Under review",
+      "position": 3,
+      "forecast_type": "Open",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 2,
+      "probability": 100
+    },
+    {
+      "partial": true,
+      "id": 31000425874,
+      "name": "Demo",
+      "position": 4,
+      "forecast_type": "Open",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 2,
+      "probability": 100
+    },
+    {
+      "partial": true,
+      "id": 31000425875,
+      "name": "Negotiation",
+      "position": 5,
+      "forecast_type": "Open",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 2,
+      "probability": 100
+    },
+    {
+      "partial": true,
+      "id": 31000425876,
+      "name": "Won",
+      "position": 7,
+      "forecast_type": "Closed Won",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 4,
+      "probability": 100
+    },
+    {
+      "partial": true,
+      "id": 31000425877,
+      "name": "Lost",
+      "position": 8,
+      "forecast_type": "Closed Lost",
+      "updated_at": "2023-03-09T06:44:37Z",
+      "deal_pipeline_id": 31000060739,
+      "choice_type": 4,
+      "probability": 0
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "fields": [
+    {
+      "id": 1,
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": true,
+      "quick_add_position": 3,
+      "visible": true
+    },
+    {
+      "id": 2,
+      "label": "Start date",
+      "name": "start_date",
+      "type": "date_time_split",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": true,
+      "quick_add_position": 4,
+      "visible": true
+    },
+    {
+      "id": 3,
+      "label": "End date",
+      "name": "end_date",
+      "type": "date_time_split",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": true,
+      "quick_add_position": 5,
+      "visible": true
+    },
+    {
+      "id": 4,
+      "label": "Related entity",
+      "name": "targetable",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": true,
+      "quick_add_position": 6,
+      "visible": false,
+      "auto_suggest_url": "/search?per_page=5&include=lead,contact,sales_account,deal&q="
+    },
+    {
+      "id": 5,
+      "label": "Related to",
+      "name": "targetables",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": true,
+      "quick_add_position": 7,
+      "visible": true,
+      "auto_suggest_url": "/search?per_page=5&include=lead,contact,sales_account,deal&q=",
+      "multiple": true
+    },
+    {
+      "id": 6,
+      "label": "Owner",
+      "name": "owner_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": 8,
+      "visible": true
+    },
+    {
+      "id": 7,
+      "label": "Notes",
+      "name": "notes",
+      "type": "textarea",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": 9,
+      "visible": true
+    },
+    {
+      "id": 8,
+      "label": "Sales activity type",
+      "name": "sales_activity_type_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": 31000559503,
+          "value": "Test Activity",
+          "position": 1,
+          "choice_type": 2
+        }
+      ],
+      "base_model": "SalesActivity",
+      "required": true,
+      "quick_add_position": 11,
+      "visible": true
+    },
+    {
+      "id": 9,
+      "label": "Location",
+      "name": "location",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 10,
+      "label": "Checked in time",
+      "name": "checkedin_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 11,
+      "label": "Checked out location",
+      "name": "checkedout_location",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 12,
+      "label": "Checked out time",
+      "name": "checkedout_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 13,
+      "label": "Time spent (in seconds)",
+      "name": "checkedin_duration",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 14,
+      "label": "Outcome",
+      "name": "sales_activity_outcome_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        {
+          "id": 31002448416,
+          "value": "Left message",
+          "position": 1,
+          "choice_type": 2
+        },
+        {
+          "id": 31002448417,
+          "value": "No response",
+          "position": 2,
+          "choice_type": 2
+        },
+        {
+          "id": 31002448418,
+          "value": "Not able to reach",
+          "position": 3,
+          "choice_type": 2
+        },
+        {
+          "id": 31002448419,
+          "value": "Not interested",
+          "position": 4,
+          "choice_type": 2
+        },
+        {
+          "id": 31002448415,
+          "value": "Interested",
+          "position": 5,
+          "choice_type": 2
+        }
+      ],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 15,
+      "label": "Mark as completed",
+      "name": "status",
+      "type": "checkbox",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [
+        {
+          "id": "32009647448",
+          "value": "true",
+          "position": 1
+        },
+        {
+          "id": "32009647449",
+          "value": "false",
+          "position": 2
+        }
+      ],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 16,
+      "label": "Completed date",
+      "name": "completed_date",
+      "type": "date_time_split",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "SalesActivity",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    }
+  ]
+}

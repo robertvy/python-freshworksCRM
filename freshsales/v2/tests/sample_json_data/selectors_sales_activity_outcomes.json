@@ -1,0 +1,249 @@
+{
+  "sales_activity_outcomes": [
+    {
+      "partial": true,
+      "id": 31002091481,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477939,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091456,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477934,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091471,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477937,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091476,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477938,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091466,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477936,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091461,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477935,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091486,
+      "name": "Interested",
+      "sales_activity_type_id": 31000477940,
+      "position": 1
+    },
+    {
+      "partial": true,
+      "id": 31002091462,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477935,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091482,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477939,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091467,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477936,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091477,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477938,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091487,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477940,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091472,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477937,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091457,
+      "name": "Left message",
+      "sales_activity_type_id": 31000477934,
+      "position": 2
+    },
+    {
+      "partial": true,
+      "id": 31002091483,
+      "name": "No response",
+      "sales_activity_type_id": 31000477939,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091473,
+      "name": "No response",
+      "sales_activity_type_id": 31000477937,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091478,
+      "name": "No response",
+      "sales_activity_type_id": 31000477938,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091488,
+      "name": "No response",
+      "sales_activity_type_id": 31000477940,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091468,
+      "name": "No response",
+      "sales_activity_type_id": 31000477936,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091458,
+      "name": "No response",
+      "sales_activity_type_id": 31000477934,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091463,
+      "name": "No response",
+      "sales_activity_type_id": 31000477935,
+      "position": 3
+    },
+    {
+      "partial": true,
+      "id": 31002091474,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477937,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091489,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477940,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091469,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477936,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091479,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477938,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091459,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477934,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091464,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477935,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091484,
+      "name": "Not interested",
+      "sales_activity_type_id": 31000477939,
+      "position": 4
+    },
+    {
+      "partial": true,
+      "id": 31002091490,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477940,
+      "position": 5
+    },
+    {
+      "partial": true,
+      "id": 31002091460,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477934,
+      "position": 5
+    },
+    {
+      "partial": true,
+      "id": 31002091485,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477939,
+      "position": 5
+    },
+    {
+      "partial": true,
+      "id": 31002091465,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477935,
+      "position": 5
+    },
+    {
+      "partial": true,
+      "id": 31002091480,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477938,
+      "position": 5
+    },
+    {
+      "partial": true,
+      "id": 31002091470,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477936,
+      "position": 5
+    },
+    {
+      "partial": true,
+      "id": 31002091475,
+      "name": "Not able to reach",
+      "sales_activity_type_id": 31000477937,
+      "position": 5
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "sales_account": {
+    "id": 31003638276,
+    "name": "New Name",
+    "address": "3431 Eagle Rd",
+    "city": "Toronto",
+    "state": "Ontario",
+    "zipcode": "M8Z 4H4",
+    "country": "Canada",
+    "number_of_employees": 201,
+    "annual_revenue": 1000000,
+    "website": "sampleacme.com",
+    "owner_id": 31000148397,
+    "phone": "19266343001",
+    "open_deals_amount": "1600.0",
+    "open_deals_count": 2,
+    "won_deals_amount": "4000.0",
+    "won_deals_count": 1,
+    "last_contacted": "2023-05-08T21:00:00+02:00",
+    "last_contacted_mode": "Email Incoming",
+    "facebook": null,
+    "twitter": null,
+    "linkedin": null,
+    "links": {
+      "conversations": "/crm/sales/sales_accounts/31003638276/conversations/all?include=email_conversation_recipients%2Ctargetable%2Cphone_number%2Cphone_caller%2Cnote%2Cuser&per_page=3",
+      "document_associations": "/crm/sales/sales_accounts/31003638276/document_associations",
+      "notes": "/crm/sales/sales_accounts/31003638276/notes?include=creater",
+      "tasks": "/crm/sales/sales_accounts/31003638276/tasks?include=creater,owner,updater,targetable,users,task_type",
+      "appointments": "/crm/sales/sales_accounts/31003638276/appointments?include=creater,owner,updater,targetable,appointment_attendees,conference,note"
+    },
+    "custom_field": {
+      "cf_is_vip": true
+    },
+    "created_at": "2023-02-02T13:00:00+01:00",
+    "updated_at": "2023-05-11T13:27:22+02:00",
+    "avatar": null,
+    "parent_sales_account_id": null,
+    "recent_note": "Acme Inc is a Canada based apparel retailer with 5 physical stores. They also have an e-commerce website.",
+    "last_contacted_via_sales_activity": "2023-05-08T21:00:00+02:00",
+    "last_contacted_sales_activity_mode": "Email",
+    "completed_sales_sequences": null,
+    "active_sales_sequences": null,
+    "last_assigned_at": "2023-03-09T07:44:54+01:00",
+    "is_deleted": false,
+    "team_user_ids": null,
+    "web_form_ids": null,
+    "tags": ["Sample account"]
+  },
+  "meta": null
+}

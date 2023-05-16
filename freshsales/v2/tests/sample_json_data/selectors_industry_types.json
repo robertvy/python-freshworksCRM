@@ -1,0 +1,272 @@
+{
+  "industry_types": [
+    { "id": 31004057004, "name": "Accounting", "position": 1, "partial": true },
+    {
+      "id": 31004057005,
+      "name": "Advertising",
+      "position": 2,
+      "partial": true
+    },
+    { "id": 31004057006, "name": "Aerospace", "position": 3, "partial": true },
+    {
+      "id": 31004057007,
+      "name": "Agriculture",
+      "position": 4,
+      "partial": true
+    },
+    { "id": 31004057008, "name": "Aircraft", "position": 5, "partial": true },
+    { "id": 31004057009, "name": "Airline", "position": 6, "partial": true },
+    {
+      "id": 31004057010,
+      "name": "Apparel & Accessories",
+      "position": 7,
+      "partial": true
+    },
+    { "id": 31004057011, "name": "Automotive", "position": 8, "partial": true },
+    { "id": 31004057012, "name": "Banking", "position": 9, "partial": true },
+    {
+      "id": 31004057013,
+      "name": "Biotechnology",
+      "position": 10,
+      "partial": true
+    },
+    {
+      "id": 31004057014,
+      "name": "Broadcasting",
+      "position": 11,
+      "partial": true
+    },
+    { "id": 31004057015, "name": "Brokerage", "position": 12, "partial": true },
+    {
+      "id": 31004057016,
+      "name": "Call Centers",
+      "position": 13,
+      "partial": true
+    },
+    {
+      "id": 31004057017,
+      "name": "Cargo Handling",
+      "position": 14,
+      "partial": true
+    },
+    { "id": 31004057018, "name": "Chemicals", "position": 15, "partial": true },
+    { "id": 31004057019, "name": "Computer", "position": 16, "partial": true },
+    {
+      "id": 31004057020,
+      "name": "Construction",
+      "position": 17,
+      "partial": true
+    },
+    {
+      "id": 31004057021,
+      "name": "Consulting",
+      "position": 18,
+      "partial": true
+    },
+    {
+      "id": 31004057022,
+      "name": "Consumer Products",
+      "position": 19,
+      "partial": true
+    },
+    { "id": 31004057023, "name": "Cosmetics", "position": 20, "partial": true },
+    { "id": 31004057024, "name": "Defense", "position": 21, "partial": true },
+    {
+      "id": 31004057025,
+      "name": "Department Stores",
+      "position": 22,
+      "partial": true
+    },
+    { "id": 31004057026, "name": "Ecommerce", "position": 23, "partial": true },
+    { "id": 31004057027, "name": "Education", "position": 24, "partial": true },
+    {
+      "id": 31004057028,
+      "name": "Electronics",
+      "position": 25,
+      "partial": true
+    },
+    { "id": 31004057029, "name": "Energy", "position": 26, "partial": true },
+    {
+      "id": 31004057030,
+      "name": "Engineering",
+      "position": 27,
+      "partial": true
+    },
+    {
+      "id": 31004057031,
+      "name": "Entertainment & Leisure",
+      "position": 28,
+      "partial": true
+    },
+    {
+      "id": 31004057032,
+      "name": "Executive Search",
+      "position": 29,
+      "partial": true
+    },
+    {
+      "id": 31004057033,
+      "name": "Financial Services",
+      "position": 30,
+      "partial": true
+    },
+    {
+      "id": 31004057034,
+      "name": "Food, Beverage & Tobacco",
+      "position": 31,
+      "partial": true
+    },
+    { "id": 31004057035, "name": "Gaming", "position": 32, "partial": true },
+    {
+      "id": 31004057036,
+      "name": "Government",
+      "position": 33,
+      "partial": true
+    },
+    { "id": 31004057037, "name": "Grocery", "position": 34, "partial": true },
+    {
+      "id": 31004057038,
+      "name": "Health Care",
+      "position": 35,
+      "partial": true
+    },
+    {
+      "id": 31004057039,
+      "name": "Hospitality",
+      "position": 36,
+      "partial": true
+    },
+    { "id": 31004057040, "name": "Insurance", "position": 37, "partial": true },
+    {
+      "id": 31004057041,
+      "name": "Internet Publishing",
+      "position": 38,
+      "partial": true
+    },
+    {
+      "id": 31004057042,
+      "name": "Investment Banking",
+      "position": 39,
+      "partial": true
+    },
+    { "id": 31004057043, "name": "Legal", "position": 40, "partial": true },
+    { "id": 31004057044, "name": "Machinery", "position": 41, "partial": true },
+    {
+      "id": 31004057045,
+      "name": "Manufacturing",
+      "position": 42,
+      "partial": true
+    },
+    { "id": 31004057046, "name": "Media", "position": 43, "partial": true },
+    {
+      "id": 31004057047,
+      "name": "Motion Picture & Video",
+      "position": 44,
+      "partial": true
+    },
+    { "id": 31004057048, "name": "Music", "position": 45, "partial": true },
+    {
+      "id": 31004057049,
+      "name": "Newspaper Publishers",
+      "position": 46,
+      "partial": true
+    },
+    {
+      "id": 31004057050,
+      "name": "Not for Profit",
+      "position": 47,
+      "partial": true
+    },
+    {
+      "id": 31004057051,
+      "name": "Online Auctions",
+      "position": 48,
+      "partial": true
+    },
+    { "id": 31004057052, "name": "Other", "position": 49, "partial": true },
+    {
+      "id": 31004057053,
+      "name": "Pension Funds",
+      "position": 50,
+      "partial": true
+    },
+    {
+      "id": 31004057054,
+      "name": "Pharmaceuticals",
+      "position": 51,
+      "partial": true
+    },
+    {
+      "id": 31004057055,
+      "name": "Private Equity",
+      "position": 52,
+      "partial": true
+    },
+    {
+      "id": 31004057056,
+      "name": "Publishing",
+      "position": 53,
+      "partial": true
+    },
+    {
+      "id": 31004057057,
+      "name": "Real Estate",
+      "position": 54,
+      "partial": true
+    },
+    {
+      "id": 31004057058,
+      "name": "Retail & Wholesale",
+      "position": 55,
+      "partial": true
+    },
+    {
+      "id": 31004057059,
+      "name": "Securities & Commodity Exchanges",
+      "position": 56,
+      "partial": true
+    },
+    { "id": 31004057060, "name": "Service", "position": 57, "partial": true },
+    { "id": 31004057061, "name": "Shipping", "position": 58, "partial": true },
+    {
+      "id": 31004057062,
+      "name": "Soap & Detergent",
+      "position": 59,
+      "partial": true
+    },
+    { "id": 31004057063, "name": "Software", "position": 60, "partial": true },
+    { "id": 31004057064, "name": "Sports", "position": 61, "partial": true },
+    {
+      "id": 31004057065,
+      "name": "Technology",
+      "position": 62,
+      "partial": true
+    },
+    {
+      "id": 31004057066,
+      "name": "Telecommunications",
+      "position": 63,
+      "partial": true
+    },
+    {
+      "id": 31004057067,
+      "name": "Television",
+      "position": 64,
+      "partial": true
+    },
+    {
+      "id": 31004057068,
+      "name": "Transportation",
+      "position": 65,
+      "partial": true
+    },
+    { "id": 31004057069, "name": "Trucking", "position": 66, "partial": true },
+    { "id": 31004057070, "name": "Utilities", "position": 67, "partial": true },
+    {
+      "id": 31004057071,
+      "name": "Venture Capital",
+      "position": 68,
+      "partial": true
+    }
+  ]
+}

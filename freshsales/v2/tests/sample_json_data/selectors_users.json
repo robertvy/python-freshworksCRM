@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 31000148397,
+      "display_name": "Robert Doe",
+      "email": "rvy@go.com",
+      "is_active": true,
+      "work_number": "+4369912345678",
+      "mobile_number": null
+    }
+  ]
+}

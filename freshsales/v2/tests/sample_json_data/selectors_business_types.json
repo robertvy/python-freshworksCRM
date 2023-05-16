@@ -1,0 +1,14 @@
+{
+  "business_types": [
+    { "id": 31000596651, "name": "Analyst", "position": 1, "partial": true },
+    { "id": 31000596652, "name": "Competitor", "position": 2, "partial": true },
+    { "id": 31000596653, "name": "Customer", "position": 3, "partial": true },
+    { "id": 31000596654, "name": "Integrator", "position": 4, "partial": true },
+    { "id": 31000596655, "name": "Investor", "position": 5, "partial": true },
+    { "id": 31000596656, "name": "Partner", "position": 6, "partial": true },
+    { "id": 31000596657, "name": "Press", "position": 7, "partial": true },
+    { "id": 31000596658, "name": "Prospect", "position": 8, "partial": true },
+    { "id": 31000596659, "name": "Reseller", "position": 9, "partial": true },
+    { "id": 31000596660, "name": "Other", "position": 10, "partial": true }
+  ]
+}

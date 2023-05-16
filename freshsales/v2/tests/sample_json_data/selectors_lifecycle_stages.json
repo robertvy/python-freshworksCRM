@@ -1,0 +1,31 @@
+{
+  "lifecycle_stages": [
+    {
+      "id": 32009647298,
+      "name": "Lead",
+      "position": 1,
+      "disabled": false,
+      "default": true,
+      "type": "Lead",
+      "contact_status_ids": [31000543557, 31000543558, 31000543559, 31000543560]
+    },
+    {
+      "id": 32009647299,
+      "name": "Sales Qualified Lead",
+      "position": 2,
+      "disabled": false,
+      "default": true,
+      "type": "Sales Qualified Lead",
+      "contact_status_ids": [31000543561, 31000543562, 31000543563]
+    },
+    {
+      "id": 32009647300,
+      "name": "Customer",
+      "position": 3,
+      "disabled": false,
+      "default": true,
+      "type": "Customer",
+      "contact_status_ids": [31000543564, 31000543565]
+    }
+  ]
+}

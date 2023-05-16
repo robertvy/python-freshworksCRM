@@ -1,0 +1,100 @@
+{
+  "sales_activity_types": [
+    {
+      "partial": true,
+      "id": 31000477933,
+      "name": "Chat",
+      "internal_name": "chat",
+      "show_in_conversation": true,
+      "position": 1,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477934,
+      "name": "Phone",
+      "internal_name": "phone",
+      "show_in_conversation": true,
+      "position": 2,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477935,
+      "name": "Meeting",
+      "internal_name": "appointment",
+      "show_in_conversation": true,
+      "position": 3,
+      "is_default": true,
+      "is_checkedin": true,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477936,
+      "name": "Task",
+      "internal_name": "task",
+      "show_in_conversation": true,
+      "position": 4,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477937,
+      "name": "Email",
+      "internal_name": "email",
+      "show_in_conversation": true,
+      "position": 5,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477938,
+      "name": "SMS Outgoing",
+      "internal_name": "sms_outgoing",
+      "show_in_conversation": true,
+      "position": 6,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477939,
+      "name": "Reminder",
+      "internal_name": "reminder",
+      "show_in_conversation": false,
+      "position": 7,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    },
+    {
+      "partial": true,
+      "id": 31000477940,
+      "name": "SMS Incoming",
+      "internal_name": "sms_incoming",
+      "show_in_conversation": true,
+      "position": 8,
+      "is_default": true,
+      "is_checkedin": false,
+      "is_checkedin_mandatory": false,
+      "is_outcome_mandatory": false
+    }
+  ]
+}

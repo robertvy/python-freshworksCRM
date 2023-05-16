@@ -1,0 +1,145 @@
+{
+  "filters": [
+    {
+      "id": 31003548173,
+      "name": "My Contacts",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548174,
+      "name": "My Territory Contacts",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548175,
+      "name": "New Contacts",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548176,
+      "name": "All Contacts",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548177,
+      "name": "Recently Modified",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548178,
+      "name": "Recently Imported",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548179,
+      "name": "Never Contacted",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548180,
+      "name": "Needs Follow-up",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548181,
+      "name": "Active",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548182,
+      "name": "Inactive",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:39+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548183,
+      "name": "Recycle Bin",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548184,
+      "name": "Bounced contacts",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548185,
+      "name": "Untouched 5-star contacts",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548186,
+      "name": "Slipping away",
+      "model_class_name": "Contact",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    }
+  ],
+  "meta": {}
+}

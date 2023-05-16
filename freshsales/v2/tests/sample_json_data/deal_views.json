@@ -1,0 +1,125 @@
+{
+  "filters": [
+    {
+      "id": 31003548187,
+      "name": "Open Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548188,
+      "name": "My Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548189,
+      "name": "My Territory Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548190,
+      "name": "Recent Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548191,
+      "name": "Recently Imported",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    },
+    {
+      "id": 31003548192,
+      "name": "Lost Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548193,
+      "name": "Won Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548194,
+      "name": "Hot Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548195,
+      "name": "Cold Deals",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548196,
+      "name": "Closing this week",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548197,
+      "name": "This month's sales",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": false,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": ["read_edit_only", "can_delete_only"]
+    },
+    {
+      "id": 31003548198,
+      "name": "Recycle Bin",
+      "model_class_name": "Deal",
+      "user_id": 0,
+      "is_default": true,
+      "updated_at": "2023-03-09T07:44:40+01:00",
+      "user_name": null,
+      "current_user_permissions": []
+    }
+  ],
+  "meta": {}
+}

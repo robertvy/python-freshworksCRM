@@ -1,0 +1,38 @@
+{
+  "lead_sources": [
+    { "id": 31000836318, "name": "Web", "position": 1, "partial": true },
+    {
+      "id": 31000836319,
+      "name": "Organic Search",
+      "position": 2,
+      "partial": true
+    },
+    { "id": 31000836320, "name": "Email", "position": 3, "partial": true },
+    { "id": 31000836321, "name": "Phone", "position": 4, "partial": true },
+    { "id": 31000836322, "name": "Chat", "position": 5, "partial": true },
+    { "id": 31000836323, "name": "Web Form", "position": 6, "partial": true },
+    { "id": 31000836324, "name": "Referral", "position": 7, "partial": true },
+    { "id": 31000836325, "name": "Direct", "position": 8, "partial": true },
+    {
+      "id": 31000836326,
+      "name": "Paid Search",
+      "position": 9,
+      "partial": true
+    },
+    { "id": 31000836327, "name": "Blogs", "position": 10, "partial": true },
+    {
+      "id": 31000836328,
+      "name": "Social Media",
+      "position": 11,
+      "partial": true
+    },
+    {
+      "id": 31000836329,
+      "name": "Display Ads",
+      "position": 12,
+      "partial": true
+    },
+    { "id": 31000836330, "name": "Events", "position": 13, "partial": true },
+    { "id": 31000836331, "name": "Webinar", "position": 14, "partial": true }
+  ]
+}

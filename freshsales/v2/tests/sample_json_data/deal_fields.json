@@ -1,0 +1,705 @@
+{
+  "fields": [
+    {
+      "id": 1,
+      "label": "Name",
+      "name": "name",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Deal",
+      "required": true,
+      "quick_add_position": 3,
+      "visible": true
+    },
+    {
+      "id": 2,
+      "label": "Deal value",
+      "name": "amount",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Deal",
+      "required": true,
+      "quick_add_position": 4,
+      "visible": true
+    },
+    {
+      "id": 3,
+      "label": "Account name",
+      "name": "sales_account_id",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": 5,
+      "visible": true,
+      "auto_suggest_url": "/search/auto_suggest/sales_accounts_full_details.json?&q=",
+      "creatable": true,
+      "creatable_data_key": "sales_account"
+    },
+    {
+      "id": 4,
+      "label": "Related contacts",
+      "name": "contacts",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": 6,
+      "visible": true,
+      "auto_suggest_url": "/search/auto_suggest/contacts_full_details.json?&sales_account_id=&q=",
+      "multiple": true
+    },
+    {
+      "id": 5,
+      "label": "Deal pipeline",
+      "name": "deal_pipeline_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [
+        {
+          "id": 31000060739,
+          "value": "Default Pipeline",
+          "position": 1,
+          "choice_type": 1
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 6,
+      "label": "Deal stage",
+      "name": "deal_stage_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": 31000425871,
+          "value": "New",
+          "position": 1,
+          "choice_type": 5,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000425872,
+          "value": "Follow-up",
+          "position": 2,
+          "choice_type": 2,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000425873,
+          "value": "Under review",
+          "position": 3,
+          "choice_type": 2,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000425874,
+          "value": "Demo",
+          "position": 4,
+          "choice_type": 2,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000425875,
+          "value": "Negotiation",
+          "position": 5,
+          "choice_type": 2,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 31000425876,
+          "value": "Won",
+          "position": 7,
+          "choice_type": 4,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Closed Won"
+        },
+        {
+          "id": 31000425877,
+          "value": "Lost",
+          "position": 8,
+          "choice_type": 4,
+          "deal_pipeline_id": 31000060739,
+          "forecast_type": "Closed Lost"
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 7,
+      "label": "Lost reason",
+      "name": "deal_reason_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        { "id": 31000538251, "value": "Opted our rival", "position": 1 },
+        { "id": 31000538252, "value": "Price is too high", "position": 2 },
+        { "id": 31000538253, "value": "Junk Lead", "position": 3 },
+        { "id": 31000538254, "value": "Not interested", "position": 4 },
+        { "id": 31000538255, "value": "No requirement", "position": 5 },
+        { "id": 31000538256, "value": "Need only in future", "position": 6 },
+        { "id": 31000538257, "value": "Product not satisfying", "position": 7 },
+        { "id": 31000538258, "value": "No proper follow-up", "position": 8 },
+        { "id": 31000538259, "value": "Appointment missed", "position": 9 }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 8,
+      "label": "Closed date",
+      "name": "closed_date",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 9,
+      "label": "Sales owner",
+      "name": "owner_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": 11,
+      "visible": true
+    },
+    {
+      "id": 10,
+      "label": "Currency",
+      "name": "currency_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [
+        { "id": 31000060446, "value": "USD", "position": 1, "is_active": true }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": 12,
+      "visible": true
+    },
+    {
+      "id": 11,
+      "label": "Tags",
+      "name": "tags",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false,
+      "auto_suggest_url": "/search/auto_suggest/tags.json?&tag_type=deal&q=",
+      "creatable": true,
+      "creatable_data_key": "tags",
+      "multiple": true
+    },
+    {
+      "id": 12,
+      "label": "Deal value in Base Currency",
+      "name": "base_currency_amount",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 13,
+      "label": "Payment status",
+      "name": "deal_payment_status_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [
+        { "id": 31000119234, "value": "Offline", "position": 1 },
+        { "id": 31000119235, "value": "Online", "position": 2 }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 14,
+      "label": "Probability (%)",
+      "name": "probability",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 15,
+      "label": "Territory",
+      "name": "territory_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 16,
+      "label": "Forecast category",
+      "name": "forecast_category",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        { "id": "1", "value": "Committed", "position": 1 },
+        { "id": "2", "value": "Best-case", "position": 2 }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 17,
+      "label": "Expected close date",
+      "name": "expected_close",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 18,
+      "label": "Type",
+      "name": "deal_type_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        { "id": 31000179100, "value": "New Business", "position": 1 },
+        {
+          "id": 31000179101,
+          "value": "Existing Business-Renewal",
+          "position": 2
+        },
+        {
+          "id": 31000179102,
+          "value": "Existing Business-Upgrade",
+          "position": 3
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 19,
+      "label": "Source",
+      "name": "lead_source_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [
+        { "id": 31000836318, "value": "Web", "position": 1, "choice_type": 1 },
+        {
+          "id": 31000836319,
+          "value": "Organic Search",
+          "position": 2,
+          "choice_type": 1
+        },
+        {
+          "id": 31000836320,
+          "value": "Email",
+          "position": 3,
+          "choice_type": 1
+        },
+        {
+          "id": 31000836321,
+          "value": "Phone",
+          "position": 4,
+          "choice_type": 1
+        },
+        { "id": 31000836322, "value": "Chat", "position": 5, "choice_type": 1 },
+        {
+          "id": 31000836323,
+          "value": "Web Form",
+          "position": 6,
+          "choice_type": 1
+        },
+        {
+          "id": 31000836324,
+          "value": "Referral",
+          "position": 7,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836325,
+          "value": "Direct",
+          "position": 8,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836326,
+          "value": "Paid Search",
+          "position": 9,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836327,
+          "value": "Blogs",
+          "position": 10,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836328,
+          "value": "Social Media",
+          "position": 11,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836329,
+          "value": "Display Ads",
+          "position": 12,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836330,
+          "value": "Events",
+          "position": 13,
+          "choice_type": 2
+        },
+        {
+          "id": 31000836331,
+          "value": "Webinar",
+          "position": 14,
+          "choice_type": 2
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 20,
+      "label": "Campaign",
+      "name": "campaign_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 21,
+      "label": "Last activity type",
+      "name": "last_contacted_sales_activity_mode",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        { "id": "Chat", "value": "Chat", "position": 1 },
+        { "id": "Phone", "value": "Phone", "position": 2 },
+        { "id": "Meeting", "value": "Meeting", "position": 3 },
+        { "id": "Task", "value": "Task", "position": 4 },
+        { "id": "Email", "value": "Email", "position": 5 },
+        { "id": "SMS Outgoing", "value": "SMS Outgoing", "position": 6 },
+        { "id": "Reminder", "value": "Reminder", "position": 7 },
+        { "id": "SMS Incoming", "value": "SMS Incoming", "position": 8 }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 22,
+      "label": "Last activity date",
+      "name": "last_contacted_via_sales_activity",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 23,
+      "label": "Age (in days)",
+      "name": "age",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 24,
+      "label": "Recent note",
+      "name": "recent_note",
+      "type": "textarea",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 25,
+      "label": "Active sales sequences",
+      "name": "active_sales_sequences",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 26,
+      "label": "Completed sales sequences",
+      "name": "completed_sales_sequences",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 27,
+      "label": "Created by",
+      "name": "creater_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 28,
+      "label": "Created at",
+      "name": "created_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 8,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 29,
+      "label": "Updated by",
+      "name": "updater_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 9,
+      "choices": [
+        {
+          "id": 31000148397,
+          "value": "Robert Doe",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 31000060739
+        }
+      ],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 30,
+      "label": "Updated at",
+      "name": "updated_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 10,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 31,
+      "label": "Web form",
+      "name": "web_form_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 11,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 32,
+      "label": "Upcoming activities",
+      "name": "upcoming_activities_time",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 12,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 33,
+      "label": "Deal stage updated at",
+      "name": "stage_updated_time",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 13,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 34,
+      "label": "Last assigned at",
+      "name": "last_assigned_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 14,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 35,
+      "label": "Expected deal value",
+      "name": "expected_deal_value",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 15,
+      "choices": [],
+      "base_model": "Deal",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    }
+  ]
+}

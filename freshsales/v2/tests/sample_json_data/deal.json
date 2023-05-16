@@ -1,0 +1,52 @@
+{
+  "deal": {
+    "id": 31001944158,
+    "name": "Widgetz.io // Gold plan // 70 users // New business",
+    "amount": "5600.0",
+    "base_currency_amount": "5600.0",
+    "expected_close": "2023-03-16",
+    "closed_date": null,
+    "stage_updated_time": "2023-03-09T07:44:53+01:00",
+    "custom_field": {},
+    "probability": 100,
+    "updated_at": "2023-05-11T08:34:17+02:00",
+    "created_at": "2023-03-04T01:00:00+01:00",
+    "deal_pipeline_id": 31000060739,
+    "deal_stage_id": 31000425871,
+    "age": 70,
+    "links": {
+      "conversations": "/crm/sales/deals/31001944158/conversations/all?include=email_conversation_recipients%2Ctargetable%2Cphone_number%2Cphone_caller%2Cnote%2Cuser&per_page=3",
+      "document_associations": "/crm/sales/deals/31001944158/document_associations",
+      "notes": "/crm/sales/deals/31001944158/notes?include=creater",
+      "tasks": "/crm/sales/deals/31001944158/tasks?include=creater,owner,updater,targetable,users,task_type",
+      "appointments": "/crm/sales/deals/31001944158/appointments?include=creater,owner,updater,targetable,appointment_attendees,conference,note"
+    },
+    "recent_note": "Received an approval for a 20% discount on this deal.",
+    "completed_sales_sequences": null,
+    "active_sales_sequences": null,
+    "web_form_id": null,
+    "upcoming_activities_time": "2023-05-12T17:00:00+02:00",
+    "collaboration": {},
+    "last_assigned_at": "2023-03-09T07:44:54+01:00",
+    "last_contacted_sales_activity_mode": null,
+    "last_contacted_via_sales_activity": null,
+    "expected_deal_value": "5600.0",
+    "is_deleted": false,
+    "team_user_ids": null,
+    "avatar": null,
+    "fc_widget_collaboration": {
+      "convo_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJDb252b0lkIjoiMzEwMDE5NDQxNTgiLCJ0eXBlIjoiZGVhbCJ9.NhF79Q8JoR5c4KnjHetFhVYGka2hvo4sPBQ4uApvW34",
+      "auth_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VyVVVJRCI6IjU3NjMzMDUzOTg2NDYzOTE0OSJ9.Q2VvPBMXKaWYVzMtCdsf-0o0lIH94LvMUT39l-3J3Wg",
+      "encoded_jwt_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwcm9kdWN0IjoiZnJlc2hzYWxlcyIsImNvbnRleHRfaWQiOiIzMTAwMTk0NDE1OCIsImNvbnRleHRfdHlwZSI6IkRlYWwiLCJwcm9kdWN0X2FjY291bnRfaWQiOiI3NTc2NTIiLCJwcm9kdWN0X2FjY291bnRfZG9tYWluIjoiYXBpd3JhcHBlcmluYy03ZmY4OTkyOGM5NzQ2YWIuZnJlc2hzYWxlcy5pbyIsInVzZXJfZW1haWwiOiJydnlAZ28tbW9kZWxzLmV1IiwiaXNfc2VydmVyIjp0cnVlLCJleHAiOjE2ODQwMTM2MzN9.umuYtrmQLOCEwuLe1RVlVZO0U_I9q7RrusR6Z3ngI5o"
+    },
+    "forecast_category": 1,
+    "deal_prediction": 0,
+    "deal_prediction_last_updated_at": null,
+    "freddy_forecast_metrics": null,
+    "last_deal_prediction": null,
+    "has_products": false,
+    "rotten_days": 40,
+    "tags": ["Sample Deal"]
+  },
+  "meta": null
+}

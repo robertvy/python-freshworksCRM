@@ -1,0 +1,23 @@
+{
+  "task": {
+    "id": 31001308220,
+    "status": 0,
+    "title": "Sample Task",
+    "description": "This is just a sample task.",
+    "created_at": "2023-05-14T22:29:55+02:00",
+    "updated_at": "2023-05-14T22:29:55+02:00",
+    "owner_id": 31000148397,
+    "due_date": "2099-06-21T13:00:00+02:00",
+    "completed_date": null,
+    "creater_id": 31000148397,
+    "updater_id": 31000148397,
+    "outcome_id": null,
+    "task_type_id": null,
+    "targetables": [
+      {
+        "id": 31016358306,
+        "type": "Contact"
+      }
+    ]
+  }
+}

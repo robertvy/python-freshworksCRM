@@ -1,0 +1,40 @@
+{
+  "sales_activity": {
+    "id": 31000274656,
+    "title": "ticket",
+    "start_date": "2017-12-04T12:30:00+01:00",
+    "end_date": "2017-12-04T13:00:00+01:00",
+    "sales_activity_type_id": 31000559503,
+    "created_at": "2023-05-15T11:27:19+02:00",
+    "updated_at": "2023-05-15T11:27:19+02:00",
+    "notes": "sample",
+    "owner_id": 31000148397,
+    "sales_activity_outcome_id": null,
+    "remote_id": null,
+    "import_id": null,
+    "creater_id": 31000148397,
+    "updater_id": 31000148397,
+    "conversation_time": "2017-12-04T13:00:00+01:00",
+    "targetable_id": 31016358306,
+    "targetable_type": "Contact",
+    "latitude": null,
+    "longitude": null,
+    "location": null,
+    "checkedin_at": null,
+    "conversation_id": null,
+    "checkedout_latitude": null,
+    "checkedout_longitude": null,
+    "checkedout_location": null,
+    "checkedout_at": null,
+    "checkedin_duration": null,
+    "custom_field": {},
+    "completed_date": null,
+    "status": false,
+    "targetables": [
+      {
+        "id": 31016358306,
+        "type": "Contact"
+      }
+    ]
+  }
+}

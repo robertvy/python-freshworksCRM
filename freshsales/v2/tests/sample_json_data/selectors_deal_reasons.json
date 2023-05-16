@@ -1,0 +1,53 @@
+{
+  "deal_reasons": [
+    {
+      "id": 31000538251,
+      "name": "Opted our rival",
+      "position": 1,
+      "partial": true
+    },
+    {
+      "id": 31000538252,
+      "name": "Price is too high",
+      "position": 2,
+      "partial": true
+    },
+    { "id": 31000538253, "name": "Junk Lead", "position": 3, "partial": true },
+    {
+      "id": 31000538254,
+      "name": "Not interested",
+      "position": 4,
+      "partial": true
+    },
+    {
+      "id": 31000538255,
+      "name": "No requirement",
+      "position": 5,
+      "partial": true
+    },
+    {
+      "id": 31000538256,
+      "name": "Need only in future",
+      "position": 6,
+      "partial": true
+    },
+    {
+      "id": 31000538257,
+      "name": "Product not satisfying",
+      "position": 7,
+      "partial": true
+    },
+    {
+      "id": 31000538258,
+      "name": "No proper follow-up",
+      "position": 8,
+      "partial": true
+    },
+    {
+      "id": 31000538259,
+      "name": "Appointment missed",
+      "position": 9,
+      "partial": true
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "product": {
+    "id": 31000985854,
+    "name": "Sample Product",
+    "category": "Software",
+    "custom_field": {},
+    "product_code": null,
+    "sku_number": null,
+    "parent_product": null,
+    "territory_id": null,
+    "valid_till": null,
+    "is_active": true,
+    "owner_id": null,
+    "is_deleted": false,
+    "created_at": "2023-05-16T14:16:05+02:00",
+    "updated_at": "2023-05-16T14:16:05+02:00",
+    "pricing_type": 1,
+    "product_pricings": [
+      {
+        "id": 31000863851,
+        "currency_code": "USD",
+        "_destroy": false,
+        "billing_cycle": null,
+        "billing_type": null,
+        "unit_price": 1000.0,
+        "setup_fee": null,
+        "is_locked": false
+      },
+      {
+        "id": 31000863852,
+        "currency_code": "EUR",
+        "_destroy": false,
+        "billing_cycle": null,
+        "billing_type": null,
+        "unit_price": 2000.0,
+        "setup_fee": null,
+        "is_locked": false
+      }
+    ],
+    "avatar": null,
+    "base_currency_amount": 2000.0,
+    "creater_id": 31000048819,
+    "updater_id": 31000048819,
+    "description": "This is a sample product"
+  }
+}

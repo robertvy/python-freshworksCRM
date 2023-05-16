@@ -1,0 +1,6 @@
+{
+  "deal_payment_statuses": [
+    { "id": 31000119234, "name": "Offline", "position": 1, "partial": true },
+    { "id": 31000119235, "name": "Online", "position": 2, "partial": true }
+  ]
+}

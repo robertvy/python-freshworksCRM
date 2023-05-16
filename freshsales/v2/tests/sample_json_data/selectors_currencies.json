@@ -1,0 +1,13 @@
+{
+  "currencies": [
+    {
+      "partial": true,
+      "id": 31000060446,
+      "is_active": true,
+      "currency_code": "USD",
+      "exchange_rate": "1.0",
+      "currency_type": 1,
+      "schedule_info": null
+    }
+  ]
+}

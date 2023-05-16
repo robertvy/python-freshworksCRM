@@ -1,0 +1,55 @@
+{
+  "appointment_attendees": [],
+  "contacts": [
+    {
+      "id": 31016358306,
+      "avatar": "https://img.fullcontact.com/static/4df0efb1ea1a7650fef74f5e44d50d35_ca437b79617f8bbfc40c317b729d32693be1463f356b5be1015b39739859659f",
+      "display_name": "Jane Sampleton",
+      "first_name": "Jane",
+      "last_name": "Sampleton",
+      "email": "janesampleton@gmail.com",
+      "work_number": "3684932360",
+      "mobile_number": "19266529503"
+    }
+  ],
+  "conferences": [],
+  "notes": [],
+  "appointment": {
+    "id": 31001473829,
+    "time_zone": "Chennai",
+    "title": "Updated Appointment",
+    "description": "This is just a sample Appointment.",
+    "location": "Chennai, TN, India",
+    "is_allday": false,
+    "outcome_id": null,
+    "from_date": "2016-06-20T07:00:00+02:00",
+    "end_date": "2016-06-20T08:00:00+02:00",
+    "created_at": "2023-05-15T04:03:41+02:00",
+    "updated_at": "2023-05-15T10:45:46+02:00",
+    "provider": "freshsales",
+    "creater_id": 31000148397,
+    "latitude": null,
+    "longitude": null,
+    "checkedin_at": null,
+    "can_checkin_checkout": true,
+    "checkedout_latitude": null,
+    "checkedout_longitude": null,
+    "checkedout_location": null,
+    "checkedout_at": null,
+    "checkedin_duration": null,
+    "can_checkin": true,
+    "conference_id": null,
+    "targetables": [
+      {
+        "id": 31016358306,
+        "type": "Contact"
+      }
+    ],
+    "appointment_attendee_ids": [],
+    "targetable": {
+      "type": "contact",
+      "id": 31016358306
+    },
+    "note_id": null
+  }
+}
