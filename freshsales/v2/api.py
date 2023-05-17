@@ -214,14 +214,14 @@ class AccountAPI(object):
         unique_identifier = {unique_field_name: unique_field_value}
         data = {
             'unique_identifier': unique_identifier,
-            'account': account_properties
+            'sales_account': account_properties
         }
         response = self._api._post(url, data=json.dumps(data))
         return Account(**response.get('sales_account', {}))
 
     def clone_account(self, account_id, **data):
         url = f'/sales_accounts/{account_id}/clone'
-        payload = {'account': data} if data else {}
+        payload = {'sales_account': data} if data else {}
         response = self._api._post(url, data=json.dumps(payload))
         return Account(**response.get('sales_account', {}))
 
