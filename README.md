@@ -211,12 +211,6 @@ Get specific page of contacts:
 [<Contact 'John Doe'>, <Contact 'Jane Sampleton'>,...]
 ```
 
-[<Contact 'Jane Sampleton'>]
-
-```
-[<Contact 'Jane Sampleton'>]
-```
-
 #### Update
 
 ```python
