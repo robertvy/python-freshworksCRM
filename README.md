@@ -217,7 +217,7 @@ Get specific page of contacts:
 >>> a.contacts.update_contact(1,
                               first_name='Jane',
                               last_name='Updated')
-<Contact 'Jane Updated'></Contact>
+<Contact 'Jane Updated'>
 ```
 
 ### Upsert
@@ -226,7 +226,7 @@ Get specific page of contacts:
 >>> a.contacts.upsert_contact(unique_identifier=('emails', 'janesampleton@gmail.com'),
                               first_name='Jane',
                               last_name='Upserted')
-<Contact 'Jane Upserted'></Contact>
+<Contact 'Jane Upserted'>
 ```
 
 #### Delete
@@ -287,7 +287,7 @@ The Marketing Lists API is accessed by using the methods assigned to the `a.list
 ```python
 >>> a.lists.update_list(1,
                         name='My Updated List')
-<List 'My Updated List'></List>
+<List 'My Updated List'>
 ```
 
 #### Fetch Contacts
@@ -484,7 +484,7 @@ The Notes API is accessed by using the methods assigned to the `a.notes` instanc
 >>> a.notes.create_note(description='My Note',
                         targetable_type='Contact',
                         targetable_id=1)
-<Note 'My Note'></Note>
+<Note 'My Note'>
 ```
 
 #### Update
