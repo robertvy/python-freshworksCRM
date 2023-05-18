@@ -39,8 +39,8 @@ def test_view_apppointment(appointment):
     assert isinstance(appointment.end_date, datetime.datetime)
 
 
-def test_list_all_appointments(api):
-    appointments = api.appointments.list_all_appointments("upcoming")
+def test_list_appointments(api):
+    appointments = api.appointments.list_appointments("upcoming")
 
     if appointments:
         appointment = appointments[1]

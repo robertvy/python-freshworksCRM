@@ -10,11 +10,11 @@ from freshsales.models import (
 
 @pytest.fixture
 def sales_activity(api):
-    return api.sales_activities.view_sales_activity(31000274656)
+    return api.sales_activities.view_activity(31000274656)
 
 
-def test_create_sales_activity(api):
-    sales_activity = api.sales_activities.create_sales_activity(
+def test_create_activity(api):
+    sales_activity = api.sales_activities.create_activity(
         title='ticket',
         notes='sample',
         targetable_id=31016358306,
@@ -33,7 +33,7 @@ def test_create_sales_activity(api):
     assert isinstance(sales_activity.created_at, datetime.datetime)
 
 
-def test_view_sales_activity(sales_activity):
+def test_view_activity(sales_activity):
     assert isinstance(sales_activity, SalesActivity)
     assert sales_activity.title == "ticket"
     assert sales_activity.notes == "sample"
@@ -43,8 +43,8 @@ def test_view_sales_activity(sales_activity):
     assert isinstance(sales_activity.created_at, datetime.datetime)
 
 
-def test_list_all_sales_activities(api):
-    sales_activities = api.sales_activities.list_all_sales_activities()
+def test_listes_activities(api):
+    sales_activities = api.sales_activities.list_activities()
     assert isinstance(sales_activities[0], SalesActivity)
     assert sales_activities[0].title == "ticket"
     assert sales_activities[1].title == "ticket 2"
@@ -54,29 +54,29 @@ def test_list_all_sales_activities(api):
     assert isinstance(sales_activities[0].created_at, datetime.datetime)
 
 
-def test_list_all_sales_activity_fields(api):
-    fields = api.sales_activities.list_all_sales_activity_fields()
+def test_list_fields(api):
+    fields = api.sales_activities.list_fields()
     assert isinstance(fields, list)
     assert isinstance(fields[0], Field)
     assert fields[1].name == "start_date"
 
 
-def test_update_sales_activity(api):
-    sales_activity = api.sales_activities.update_sales_activity(
+def test_update_activity(api):
+    sales_activity = api.sales_activities.update_activity(
         31000274656, title='ticket Updated')
     assert isinstance(sales_activity, SalesActivity)
     assert sales_activity.title == "ticket Updated"
 
 
-def test_delete_sales_activity(api):
-    assert api.sales_activities.delete_sales_activity(31000274656) == True
+def test_delete_activity(api):
+    assert api.sales_activities.delete_activity(31000274656) == True
 
 
-def test_sales_activity_str(sales_activity):
+def test_activity_str(sales_activity):
     assert str(
         sales_activity) == "ticket"
 
 
-def test_sales_activity_repr(sales_activity):
+def test_activity_repr(sales_activity):
     assert repr(
         sales_activity) == "<SalesActivity 'ticket' #31000274656>"

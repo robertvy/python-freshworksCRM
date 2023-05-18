@@ -377,7 +377,7 @@ class TaskAPI(object):
             response['deals'] = Deal(**response['deal'])
         return response
 
-    def list_all_tasks(self, filter_param, *include, page=None, per_page=100):
+    def list_tasks(self, filter_param, *include, page=None, per_page=100):
         url = f'/tasks?filter={filter_param}'
         url += f'&include={",".join(include)}' if include else ''
 
@@ -451,7 +451,7 @@ class AppointmentAPI(object):
         response['notes'] = [Note(**note) for note in response['notes']]
         return response
 
-    def list_all_appointments(self, filter_param, *include, page=None, per_page=100):
+    def list_appointments(self, filter_param, *include, page=None, per_page=100):
         url = f'/appointments?filter={filter_param}'
         url += f'&include={",".join(include)}' if include else ''
 
@@ -495,18 +495,18 @@ class SalesActivityAPI(object):
     def __init__(self, api):
         self._api = api
 
-    def create_sales_activity(self, **kwargs):
+    def create_activity(self, **kwargs):
         url = '/sales_activities'
         data = {'sales_activity': kwargs}
         response = self._api._post(url, data=json.dumps(data))
         return SalesActivity(**response.get('sales_activity', {}))
 
-    def view_sales_activity(self, sales_activity_id):
+    def view_activity(self, sales_activity_id):
         url = f'/sales_activities/{sales_activity_id}'
         response = self._api._get(url)
         return SalesActivity(**response.get('sales_activity', {}))
 
-    def list_all_sales_activities(self, page=None, per_page=10):
+    def list_activities(self, page=None, per_page=10):
         url = '/sales_activities'
         response = self._api._get(url)
 
@@ -532,18 +532,18 @@ class SalesActivityAPI(object):
 
         return sales_activities
 
-    def list_all_sales_activity_fields(self):
+    def list_fields(self):
         url = '/settings/sales_activities/fields'
         response = self._api._get(url)
         return [Field(**field) for field in response.get('fields', [])]
 
-    def update_sales_activity(self, sales_activity_id, **kwargs):
+    def update_activity(self, sales_activity_id, **kwargs):
         url = f'/sales_activities/{sales_activity_id}'
         data = {'sales_activity': kwargs}
         response = self._api._put(url, data=json.dumps(data))
         return SalesActivity(**response.get('sales_activity', {}))
 
-    def delete_sales_activity(self, sales_activity_id):
+    def delete_activity(self, sales_activity_id):
         url = f'/sales_activities/{sales_activity_id}'
         return self._api._delete(url).get('success') == "200"
 

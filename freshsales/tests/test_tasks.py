@@ -49,8 +49,8 @@ def test_view_task(api):
         assert isinstance(users[0], User)
 
 
-def test_list_all_tasks(api):
-    response = api.tasks.list_all_tasks("open")
+def test_list_tasks(api):
+    response = api.tasks.list_tasks("open")
     contacts = response.get('contacts')
     users = response.get('users')
     tasks = response.get('tasks')
