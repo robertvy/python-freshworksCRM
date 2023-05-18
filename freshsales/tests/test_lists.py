@@ -1,4 +1,4 @@
-from freshsales.v2.models import (
+from freshsales.models import (
     List,
     Contact,
 )

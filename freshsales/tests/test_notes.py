@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 
-from freshsales.v2.models import Note
+from freshsales.models import Note
 
 
 @pytest.fixture

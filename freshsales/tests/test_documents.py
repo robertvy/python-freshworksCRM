@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 
-from freshsales.v2.models import (
+from freshsales.models import (
     Document,
     Product,
 )

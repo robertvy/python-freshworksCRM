@@ -16,7 +16,7 @@ setup(
     extras_require={
         'test': [
             'pytest',
-            'pytest-mock'
+            'pytest-mock',
         ],
     },
     packages=find_packages(),

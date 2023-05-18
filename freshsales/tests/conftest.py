@@ -1,4 +1,4 @@
-from freshsales.v2.api import API
+from freshsales.api import API
 import pytest
 import json
 import os.path

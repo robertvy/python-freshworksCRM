@@ -3,9 +3,9 @@ import json
 import requests
 from requests import HTTPError
 
-from freshsales.v2.errors import *
+from freshsales.errors import *
 
-from freshsales.v2.models import *
+from freshsales.models import *
 
 
 class ContactAPI(object):

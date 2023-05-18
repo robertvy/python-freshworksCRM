@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 
-from freshsales.v2.models import Appointment
+from freshsales.models import Appointment
 
 
 @pytest.fixture
