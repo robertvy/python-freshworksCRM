@@ -34,3 +34,7 @@ dist/
 # Miscellaneous
 .DS_Store
 Thumbs.db
+.coverage
+.tox
+.vscode
+coverage.xml
