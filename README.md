@@ -1,4 +1,4 @@
-# Python Wrapper for Freshsales Suite CRM
+# Python API Wrapper for Freshsales Suite CRM
 
 [![PyPI](https://img.shields.io/pypi/v/python-freshworks-crm)](https://pypi.org/project/python-freshworks-crm/)
 ![Stars](https://img.shields.io/github/stars/robertvy/python-freshworksCRM)
