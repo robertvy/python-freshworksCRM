@@ -2,7 +2,12 @@ import datetime
 
 import pytest
 
-from freshsales.models import Contact, Field, View
+from freshsales.models import (
+    Contact,
+    Field,
+    View,
+    Account
+)
 
 
 @pytest.fixture
@@ -30,6 +35,7 @@ def test_view_contact(contact):
     assert contact.last_name == "Sampleton"
     assert contact.emails[0]['value'] == "janesampleton@gmail.com"
     assert contact.id == 31016358306
+    assert isinstance(contact.sales_accounts[0], Account)
 
 
 def test_list_views(api):
@@ -59,6 +65,7 @@ def test_update_contact(api):
         31016358306, first_name="New", last_name="Name", display_name="New Name")
     assert isinstance(contact, Contact)
     assert contact.display_name == "New Name"
+    assert isinstance(contact.sales_accounts[0], Account)
 
 
 def test_clone_contact(api):
@@ -69,7 +76,7 @@ def test_clone_contact(api):
     assert contact.first_name == "New"
     assert contact.last_name == "Name"
     assert contact.display_name == "New Name"
-
+    assert isinstance(contact.sales_accounts[0], Account)
 
 def test_upsert_contact(api):
     contact_data = {
@@ -84,6 +91,7 @@ def test_upsert_contact(api):
     assert contact.first_name == "Jane"
     assert contact.last_name == "Sampleton"
     assert contact.display_name == "Jane Sampleton"
+    assert isinstance(contact.sales_accounts[0], Account)
 
 
 def test_delete_contact(api):

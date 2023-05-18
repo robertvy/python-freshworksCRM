@@ -87,7 +87,17 @@
     "latest_source": null,
     "mcr_id": 1656220499163897856,
     "phone_numbers": [],
-    "tags": ["Sample contact"]
+    "tags": ["Sample contact"],
+    "sales_accounts": [
+      {
+        "avatar": null,
+        "id": 1,
+        "is_primary": true,
+        "name": "Sample Account",
+        "partial": true,
+        "website": null
+      }
+    ]
   },
   "meta": null
 }

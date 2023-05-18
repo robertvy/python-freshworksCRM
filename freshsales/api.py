@@ -15,14 +15,20 @@ class ContactAPI(object):
     def create_contact(self, **kwargs):
         url = f'/contacts'
         data = kwargs.copy()
-        response = self._api._post(url, data=json.dumps(data))
-        return Contact(**response.get('contact', {}))
+        response = self._api._post(url, data=json.dumps(data)).get('contact', {})
+        if response.get('sales_accounts'):
+            response['sales_accounts'] = [Account(**account)
+                                    for account in response['sales_accounts']]
+        return Contact(**response)
 
     def view_contact(self, contact_id, *include):
         url = f'/contacts/{contact_id}'
         url += f'?include={",".join(include)}' if include else ''
         contact = self._api._get(url)
         response = contact.get("contact", {})
+        if response.get('sales_accounts'):
+            response['sales_accounts'] = [Account(**account)
+                                    for account in response['sales_accounts']]
         return Contact(**response)
 
     def list_views(self):
@@ -62,8 +68,11 @@ class ContactAPI(object):
 
     def update_contact(self, contact_id, **data):
         url = f'/contacts/{contact_id}'
-        response = self._api._put(url, data=json.dumps(data))
-        return Contact(**response.get('contact', {}))
+        response = self._api._put(url, data=json.dumps(data)).get('contact', {})
+        if response.get('sales_accounts'):
+            response['sales_accounts'] = [Account(**account)
+                                    for account in response['sales_accounts']]        
+        return Contact(**response)
 
     def upsert_contact(self, unique_identifier, **contact_properties):
         url = '/contacts/upsert'
@@ -73,14 +82,20 @@ class ContactAPI(object):
             'unique_identifier': unique_identifier,
             'contact': contact_properties
         }
-        response = self._api._post(url, data=json.dumps(data))
-        return Contact(**response.get('contact', {}))
+        response = self._api._post(url, data=json.dumps(data)).get('contact', {})
+        if response.get('sales_accounts'):
+            response['sales_accounts'] = [Account(**account)
+                                    for account in response['sales_accounts']]           
+        return Contact(**response)
 
     def clone_contact(self, contact_id, **data):
         url = f'/contacts/{contact_id}/clone'
         payload = {'contact': data} if data else {}
         contact = self._api._post(
             url, data=json.dumps(payload)).get('contact', {})
+        if contact.get('sales_accounts'):
+            contact['sales_accounts'] = [Account(**account)
+                                    for account in contact['sales_accounts']]
         return Contact(**contact)
 
     def delete_contact(self, contact_id):
