@@ -999,15 +999,13 @@ You can use sort and sort_type to sort the results. This method also returns a s
 Here's a simple example that filters contacts based on their email address:
 
 ```python
-filter_data = {
-    "filter_rule": [
+filter_data = [
         {
             "attribute": "contact_email.email",
             "operator": "is_in",
             "value": "jamessampleton@gmail.com"
         }
     ]
-}
 
 results = a.search.filter_contacts(filter_data)
 print(results)  # [<Contact 'James Sampleton'>]
