@@ -992,6 +992,8 @@ The filter accepts a dictionary with a key named `filter_rule`. This key holds a
   
 - **value**: The value you want the attribute to be compared against.
 
+You can use sort and sort_type to sort the results. This method also returns a second boolean value that indicates whether there are more results to be fetched. This must be done manually with sorting as the API endpoint does not support pagination and shows only the first 100 results.
+
 ### Example
 
 Here's a simple example that filters contacts based on their email address:

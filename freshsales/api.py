@@ -37,7 +37,7 @@ class ContactAPI(object):
         return [View(**view) for view in response.get('filters', [])]
 
     def list_contacts(self, view_id, sort=None, sort_type=None, page=None, per_page=100):
-        url = f'/contacts/view/{view_id}'
+        url = f'/contacts/view/{view_id}?per_page={per_page}'
         params = {}
 
         if sort:
@@ -189,7 +189,7 @@ class AccountAPI(object):
         return [View(**view) for view in response.get('filters', [])]
 
     def list_accounts(self, view_id, sort=None, sort_type=None, page=None, per_page=100):
-        url = f'/sales_accounts/view/{view_id}'
+        url = f'/sales_accounts/view/{view_id}?per_page={per_page}'
         params = {}
 
         if sort:
@@ -278,7 +278,7 @@ class DealAPI(object):
         return [View(**view) for view in response.get('filters', [])]
 
     def list_deals(self, view_id, sort=None, sort_type=None, page=None, per_page=100):
-        url = f'/deals/view/{view_id}'
+        url = f'/deals/view/{view_id}?per_page={per_page}'
         params = {}
 
         if sort:
@@ -467,7 +467,7 @@ class AppointmentAPI(object):
         return response
 
     def list_appointments(self, filter_param, *include, page=None, per_page=100):
-        url = f'/appointments?filter={filter_param}'
+        url = f'/appointments?filter={filter_param}&per_page={per_page}'
         url += f'&include={",".join(include)}' if include else ''
 
         response = self._api._get(url)
@@ -522,7 +522,7 @@ class SalesActivityAPI(object):
         return SalesActivity(**response.get('sales_activity', {}))
 
     def list_activities(self, page=None, per_page=10):
-        url = '/sales_activities'
+        url = '/sales_activities?per_page={per_page}'
         response = self._api._get(url)
 
         sales_activities = response.get('sales_activities', [])
@@ -824,8 +824,13 @@ class SearchAPI(object):
     def __init__(self, api):
         self._api = api
 
-    def filter_contacts(self, filter_rules, page=None, per_page=100):
-        url = '/filtered_search/contact'
+    def filter_contacts(self, filter_rules, sort=None, sort_type=None, per_page=100):
+        url = f'/filtered_search/contact?per_page={per_page}'
+
+        if sort:
+            url += f'&sort={sort}'
+        if sort_type:
+            url += f'&sort_type={sort_type}'
 
         # Prepare filter rules for data payload
         data_rules = [{'attribute': rule['attribute'], 
@@ -836,24 +841,11 @@ class SearchAPI(object):
 
         response = self._api._post(url, data=json.dumps(data))
 
-        total_pages = response.get('meta', {}).get('total_pages', 1)
-        contacts = response.get('contacts', [])
+        # set a flag if meta total is greater than 100 to indicate that there are more results
+        num_results = response.get('meta', {}).get('total', 0)
+        exceeds_limit =  True if (num_results > 100) else False        
 
-        if page is None:
-            # Fetch all pages
-            contacts = [Contact(**contact) for contact in contacts]
-            for current_page in range(2, total_pages + 1):
-                page_contacts = self._api._get(
-                    url + f"?page={current_page}&per_page={per_page}").get('contacts', [])
-                contacts.extend([Contact(**contact)
-                                for contact in page_contacts])
-        elif 1 <= page <= total_pages:
-            # Fetch specified page
-            page_contacts = self._api._get(
-                url + f"?page={page}&per_page={per_page}").get('contacts', [])
-            contacts = [Contact(**contact) for contact in page_contacts]
-
-        return contacts
+        return ([Contact(**contact) for contact in response.get('contacts', [])], exceeds_limit)
 
 class API(object):
 
