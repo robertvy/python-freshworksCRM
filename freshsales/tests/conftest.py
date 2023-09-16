@@ -102,6 +102,7 @@ def api(mocker):
             (r"/sales_activities", "sales_activity.json"),
             (r"/cpq/products", "product_updated.json"),
             (r"/cpq/cpq_documents", "document.json"),
+            (r"/filtered_search/contact", "filter_contacts.json"),
         ],
         "put": [
             (r"/lists/31000045351/remove_contacts", "list_message.json"),

@@ -820,6 +820,41 @@ class SelectorAPI(object):
         response = self._api._get(url)
         return [LifecycleStage(**lifecycle_stage) for lifecycle_stage in response.get('lifecycle_stages', [])]
 
+class SearchAPI(object):
+    def __init__(self, api):
+        self._api = api
+
+    def filter_contacts(self, filter_rules, page=None, per_page=100):
+        url = '/filtered_search/contact'
+
+        # Prepare filter rules for data payload
+        data_rules = [{'attribute': rule['attribute'], 
+                    'operator': rule['operator'], 
+                    'value': rule['value']} for rule in filter_rules]
+        
+        data = {'filter_rule': data_rules}
+
+        response = self._api._post(url, data=json.dumps(data))
+        print(response)
+
+        total_pages = response.get('meta', {}).get('total_pages', 1)
+        contacts = response.get('contacts', [])
+
+        if page is None:
+            # Fetch all pages
+            contacts = [Contact(**contact) for contact in contacts]
+            for current_page in range(2, total_pages + 1):
+                page_contacts = self._api._get(
+                    url + f"?page={current_page}&per_page={per_page}").get('contacts', [])
+                contacts.extend([Contact(**contact)
+                                for contact in page_contacts])
+        elif 1 <= page <= total_pages:
+            # Fetch specified page
+            page_contacts = self._api._get(
+                url + f"?page={page}&per_page={per_page}").get('contacts', [])
+            contacts = [Contact(**contact) for contact in page_contacts]
+
+        return contacts
 
 class API(object):
 
@@ -835,7 +870,7 @@ class API(object):
         self.sales_activities = SalesActivityAPI(self)
         self.products = ProductAPI(self)
         self.documents = DocumentAPI(self)
-        # self.search = SearchAPI(self)
+        self.search = SearchAPI(self)
         # self.phones = PhoneAPI(self)
         # self.files = FileAPI(self)
         # self.job_statuses = JobStatusAPI(self)

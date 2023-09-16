@@ -109,21 +109,21 @@ The easiest way to install is from [PyPi](https://pypi.org/project/python-freshw
 1. Create the virtualenv (Python 3.6+ supported) and activate it:
 
    ```
-   $ virtualenv env
-   $ source env/bin/activate
+   virtualenv env
+   source env/bin/activate
    ```
 
 2. Install from PyPi:
 
    ```
-   $ pip install python-freshworks-crm
+   pip install python-freshworks-crm
    ```
 
 3. Optionally, run the test suite:
 
    ```
-   $ pip install python-freshworks-crm[test]
-   $ pytest
+   pip install python-freshworks-crm[test]
+   pytest
    ```
 
 ## Usage
@@ -970,6 +970,45 @@ The Selectors API is accessed by using the methods assigned to the `a.selectors`
 ```python
 >>> a.selectors.get_lifecycle_stages()
 [<LifecycleStage 'Lead'>, <LifecycleStage 'Customer'>]
+
+```
+
+## Filtering Contacts
+
+You can efficiently filter through your contacts using the dynamic Filter API. Here's a quick guide on how to utilize it:
+
+### Filter Data Format
+
+The filter accepts a dictionary with a key named `filter_rule`. This key holds a list of filtering criteria, and each criterion is a dictionary with the following keys:
+
+- **attribute**: Specifies the attribute of a contact you want to filter on.
+- **operator**: Describes the kind of operation you'd like to perform. Examples include:
+  - `is_in`
+  - `is_not_in`
+  - `is_before`
+  - `is_after`
+  - `is_in_the_range`
+  - ... (more operators can be added as needed)
+  
+- **value**: The value you want the attribute to be compared against.
+
+### Example
+
+Here's a simple example that filters contacts based on their email address:
+
+```python
+filter_data = {
+    "filter_rule": [
+        {
+            "attribute": "contact_email.email",
+            "operator": "is_in",
+            "value": "jamessampleton@gmail.com"
+        }
+    ]
+}
+
+results = a.search.filter_contacts(filter_data)
+print(results)  # [<Contact 'James Sampleton'>]
 ```
 
 ### Testing
@@ -977,13 +1016,13 @@ The Selectors API is accessed by using the methods assigned to the `a.selectors`
 To run the tests, you'll need to install the development dependencies:
 
 ```bash
-$ pip install python-freshworks-crm[test]
+pip install python-freshworks-crm[test]
 ```
 
 Then, you can run the tests with:
 
 ```bash
-$ pytest
+pytest
 ```
 
 Travis CI will run the tests against Python 3.6, 3.7, 3.8, 3.9., 3.10, and 3.11
@@ -991,9 +1030,9 @@ Travis CI will run the tests against Python 3.6, 3.7, 3.8, 3.9., 3.10, and 3.11
 You can also use Tox to run the tests against all supported versions of Python:
 
 ```bash
-$ tox
+tox
 ```
 
 ### Contributing
 
-Contributions are welcome! Bulk APIs as well as endpoints such as Files, Search, Phone, .. are not implemented yet. Feel free to open a pull request.
+Contributions are welcome! Bulk APIs as well as endpoints such as Files, Search (partially complete), Phone, .. are not implemented yet. Feel free to open a pull request.
