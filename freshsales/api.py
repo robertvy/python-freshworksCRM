@@ -835,7 +835,6 @@ class SearchAPI(object):
         data = {'filter_rule': data_rules}
 
         response = self._api._post(url, data=json.dumps(data))
-        print(response)
 
         total_pages = response.get('meta', {}).get('total_pages', 1)
         contacts = response.get('contacts', [])
