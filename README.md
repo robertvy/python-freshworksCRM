@@ -363,7 +363,7 @@ Note: supports pagination similar to contacts.
 #### Upsert
 
 ```python
->>> a.accounts.upsert(unique_identifier=('name', 'My Account'),
+>>> a.accounts.upsert_account(unique_identifier=('name', 'My Account'),
 name='My Upserted Account')
 <Account 'My Upserted Account'>
 ```
@@ -441,7 +441,7 @@ Note: supports pagination similar to contacts.
 #### Upsert
 
 ```python
->>> a.deals.upsert(unique_identifier=('name', 'My Deal'),
+>>> a.deals.upsert_deal(unique_identifier=('name', 'My Deal'),
                    name='My Upserted Deal')
 <Deal 'My Upserted Deal'>
 ```
